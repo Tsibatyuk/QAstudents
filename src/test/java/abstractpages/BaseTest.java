@@ -16,7 +16,7 @@ abstract public class BaseTest {
     protected WebDriver driver;
 
     //type name of the browser you're using in this variable (chrome, firefox or edge)
-    private static final String BROWSER_NAME = "firefox";
+    private static final String BROWSER_NAME = "chrome";
     //put false here if you want to see browser or true to headless mode
     private final boolean headless = false;
 
@@ -55,6 +55,10 @@ abstract public class BaseTest {
             }
             default -> throw new Exception("You chose not valid browser!");
         }
+    }
+
+    public void openUrl(String siteUrl){
+        driver.get(siteUrl);
     }
 
     @AfterMethod
