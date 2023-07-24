@@ -12,5 +12,7 @@ public class Studen {
     String userInput = scanner.nextLine();
         System.out.println(userInput);
             scanner.close();
+
+
     }
 }
