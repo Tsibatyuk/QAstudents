@@ -10,7 +10,7 @@ public class Myclass extends BaseTest
     public void someMethod(){
        openUrl("https://www.google.com/");
     }
-    public void openidow(){}
+    public void openiow(){}
 
 
 }
