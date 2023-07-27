@@ -3,7 +3,7 @@ package zhenia;
 import abstractpages.BaseTest;
 import org.testng.annotations.Test;
 
-public class FirstClass extends BaseTest {
+public class FirstClass {
 
 
     int x = 1;
