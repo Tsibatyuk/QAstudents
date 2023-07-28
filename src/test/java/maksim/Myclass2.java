@@ -56,24 +56,35 @@ public void loop() {
     @Test
     public void gg() {
 
-        for (int i = 1; i < 10; i++) {
-            if (i == 1) {
-                    System.out.print("M");
-                {   System.out.print("a");
-                    System.out.print("k");
-                    System.out.print("s");
-                    System.out.print("i");
-                    System.out.print("m");
-                    System.out.print("-");
-                    System.out.print("c");
-                    System.out.print("o");
-                    System.out.print("o");
-                    System.out.print("l");
-                    System.out.print("!");
-                }
+        for (int i = 0; i < 10; i++) {
+            if (i == 0) {
+                    System.out.print("M");}
+            if (i == 1)  {
+                    System.out.print("a");}
+            if (i == 2)
+                   {System.out.print("k");}
+            if (i == 3){
+                    System.out.print("s");}
+            if (i == 4){
+                    System.out.print("i");}
+            if (i == 5){
+                    System.out.print("m");}
+            if (i == 5){
+                    System.out.print("-");}
+            if (i == 6){
+                    System.out.print("c");}
+            if (i == 7){
+                    System.out.print("o");}
+            if (i == 8){
+                    System.out.print("o");}
+            if (i == 9){
+                    System.out.print("l");}
+
+
+
 
             }
         }
 
 
-    }}
+    }
