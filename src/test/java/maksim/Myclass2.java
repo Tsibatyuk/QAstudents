@@ -39,14 +39,25 @@ public class Myclass2 {
     }
     @Test
 public void loop() {
-    for (int i = 0; i < 7; i++) {
-        System.out.println(i);
-        for (int j = 0; j < 10; j++) {
+
+        for (int j = 1; j < 10; j++) {
             System.out.print(j);
         }
-    }
+    }@Test
+    public void fg(){
+
+      for (int g=40;g<120;g++){
+
+          if (g==40);
+          System.out.println(g);
+        }
+
+        }
+
+
+
 }
-}
+
 
 
 
