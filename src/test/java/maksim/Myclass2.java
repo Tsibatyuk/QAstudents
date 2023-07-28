@@ -50,14 +50,30 @@ public void loop() {
 
           if (g==40);
           System.out.println(g);
+        }}
+
+
+    @Test
+    public void gg() {
+
+        for (int i = 1; i < 10; i++) {
+            if (i == 1) {
+                    System.out.print("M");
+                {   System.out.print("a");
+                    System.out.print("k");
+                    System.out.print("s");
+                    System.out.print("i");
+                    System.out.print("m");
+                    System.out.print("-");
+                    System.out.print("c");
+                    System.out.print("o");
+                    System.out.print("o");
+                    System.out.print("l");
+                    System.out.print("!");
+                }
+
+            }
         }
 
-        }
 
-
-
-}
-
-
-
-
+    }}
