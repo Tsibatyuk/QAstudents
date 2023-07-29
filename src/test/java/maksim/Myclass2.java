@@ -1,6 +1,9 @@
 package maksim;
 
 import org.testng.annotations.Test;
+import pisun.Studen;
+
+import java.util.Scanner;
 
 public class Myclass2 {
 
@@ -79,12 +82,27 @@ public void loop() {
                     System.out.print("o");}
             if (i == 9){
                     System.out.print("l");}
-
-
-
-
-            }
+        }
         }
 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Виберіть цифру від 1 до 3:");
+
+        int number = sc.nextInt();
+
+        if (number == 1){
+            System.out.println("Ви можете вибрати подарунок 10 або 11 доларів");
+        }if (number ==2){
+            System.out.println("Ви можете вибрати подарунок 20 або 22 доларів");
+        }if (number ==3){
+            System.out.println("Ви можете вибрати подарунок 30 або 33 доларів");
+        }
 
     }
+}
+
+
+
+
