@@ -92,17 +92,49 @@ public void loop() {
 
         int number = sc.nextInt();
 
-        if (number == 1){
+        if (number == 1) {
             System.out.println("Ви можете вибрати подарунок 10 або 11 доларів");
-        }if (number ==2){
+        }
+
+        if (number == 2) {
             System.out.println("Ви можете вибрати подарунок 20 або 22 доларів");
-        }if (number ==3){
+
+        }
+        if (number == 3) {
             System.out.println("Ви можете вибрати подарунок 30 або 33 доларів");
         }
 
-    }
-}
+        Scanner ss = new Scanner(System.in);
+
+        System.out.println("Виберіть цифру");
+
+        int nummber = ss.nextInt();
+
+        if (nummber == 10) {
+            System.out.println("Ви виграли 10$");
+        }
+
+        if (nummber == 11) {
+            System.out.println("Ви виграли 11$");
+        }
 
 
+        if (nummber == 20) {
+            System.out.println("Ви виграли 20$");
+        }
+
+        if (nummber == 22) {
+            System.out.println("Ви виграли 22$");
+        }
 
 
+        if (nummber == 20) {
+            System.out.println("Ви виграли 30$");
+        }
+
+        if (nummber == 22) {
+            System.out.println("Ви виграли 33$");
+        }
+
+
+    }}
