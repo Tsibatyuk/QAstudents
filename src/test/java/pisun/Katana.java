@@ -120,27 +120,25 @@ public class Katana {
             if (number == 10) {
                 System.out.println("ви вибрали " + number + "$ бонус");
             }
-            if (number == 11) {
+            else if (number == 11) {
                 System.out.println("ви вибрали " + number + "$ бонус");
             } else {
                 System.out.println("Ви обрали не правильний бонус");
             }
         }
         if (number == 2) {
-            System.out.println("ти можеш вибрати подарунок 15$в або 20$");
+            System.out.println("Ти можеш вибрати бонус 15$ або 20$");
             number = sc.nextInt();
-
-            if (number == 15){
-                System.out.println("ви вибрали "+number+"$ бонус");}
-            if (number == 20){
-                System.out.println("ви вибрали "+number+"$ бонус");}
-            else {
-                System.out.println("ви обрали не правильне число");
+            if (number == 15) {
+                System.out.println("ви вибрали " + number + "$ бонус");
             }
-      }
-       if (number == 3) {
-          System.out.println("якщо вибереш 2 отримає 20");
+            else if (number == 20) {
+                System.out.println("ви вибрали " + number + "$ бонус");
+            } else {
+                System.out.println("Ви обрали не правильний бонус");
+            }
+        }
 
-    }}}
+    }}
 
 
