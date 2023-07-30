@@ -3,6 +3,8 @@ package pisun;
 
 import org.testng.annotations.Test;
 
+import java.util.Scanner;
+
 
 public class Katana {
     @Test
@@ -32,6 +34,7 @@ public class Katana {
             }
         }
     }
+
 
 
 
@@ -99,4 +102,20 @@ public class Katana {
 
             }
         }
-    }
+
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Привіт , вибери число від 1 до 3");
+
+        int number = sc.nextInt(); {
+
+        if (number == 1) {
+        System.out.println("Ти можеш вибрати бонус 10$ або 11$");
+        } else if (number == 2) {
+            System.out.println("якщо вибереш число 10 отримаєш 15");
+        }}
+
+}}
