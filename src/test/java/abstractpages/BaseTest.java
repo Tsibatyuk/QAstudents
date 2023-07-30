@@ -61,6 +61,7 @@ abstract public class BaseTest {
         driver.get(siteUrl);
     }
 
+
     @AfterMethod
     public void closeWindow() {
         driver.quit();
