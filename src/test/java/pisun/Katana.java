@@ -139,6 +139,19 @@ public class Katana {
             }
         }
 
+        if (number == 3) {
+            System.out.println("ти можеш вибрати бонус 13$ або 19$");
+            number = sc.nextInt();
+            if (number == 13) {
+                System.out.println("ви вибрали" + number + "бонус");
+            }
+            else if (number == 19) {
+                System.out.println("ви вибрали " + number + "$ бонус");
+            }
+            else {
+                System.out.println("ви обрали не правильний бонус");
+            }
+        }
     }}
 
 
