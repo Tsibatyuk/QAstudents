@@ -6,43 +6,97 @@ import org.testng.annotations.Test;
 
 public class Katana {
     @Test
-    public void User() {
-        for (int k = -1; k < 30; k++) {
-            System.out.println(k);
+    protected void User3() {
+        for (int u = 0; u < 4; u++) {
+            if (u == 0) {
+                for (int m = 0; m < 4; m++) {
+                    System.out.print(" $ ");
+                }
+            }
 
-
-            for (int k = 5; a < 25; a++) {
-                System.out.print(a);
-
-
-                for (int i = 7; i < 20; i++) {
-                    System.out.print(i);
-
-
-                    for (int c = 10; k < 15; c++) {
-                        System.out.print(c);
-
-
-                        for (int n = 15; k < 15; n++) {
-                            System.out.print(n);
-                        }
-
-                    }
+            if (u == 2) {
+                System.out.println("");
+                for (int m = 2; m < 4; m++) {
+                    if (m == 1) {
+                        System.out.print(" ");
+                    } else System.out.print("   $ ");
+                }
+            }
+            if (u == 3) {
+                System.out.println("");
+                for (int m = 3; m < 4; m++) {
+                    if (m == 1) {
+                        System.out.print(" ");
+                    } else System.out.print("     $ ");
                 }
             }
         }
     }
-}
 
-public class Kassa {
 
-    void Sisa( {
-        for (int l = 1; l < 70; l++) {
-            System.out.print(l);
-            if (l = 1) ;
-            l <
 
+//    @Test
+//    private void User2(){
+//        for (int o = 0; o < 3; o++) {
+//            if (o == 0) {
+//                for (int p = 0; p < 3; p++) {
+//                    System.out.print ("  *");
+//                }
+//
+//            }
+//            if (o == 1) {
+//            System.out.println("");
+//            for  (int p = 0; p < 3; p++) {
+//                if (p == 0 ) {
+//                    System.out.print(" ");
+//                }else {
+//                    System.out.print(" * ");
+//                }
+//            }
+//        }
+//
+//            if (o == 1) {
+//                System.out.println("");
+//                for ( int p = 0; p < 3; p ++){
+//                    if (p == 2) {
+//                        System.out.print(" * ");
+//                    }else {
+//                        System.out.print(" ");
+//                    }
+//                }
+//            }} }
+
+
+    @Test
+    public void User() {
+        for (int k = 0; k < 3; k++) {
+            if (k == 0) {
+                for (int i = 0; i < 3; i++) {
+
+                        System.out.print(" * ");
+                    }
+                } if (k == 1) {
+                    System.out.println("");
+                    for (int i = 0; i < 3; i++) {
+                        if (i == 0) {
+                            System.out.print(" ");
+                        } else {
+                            System.out.print(" * ");
+                        }
+                    }
+                }
+                if (k == 2) {
+                    System.out.println("");
+                    for (int i = 0; i < 3; i++) {
+                        if (i == 2) {
+                            System.out.print(" * ");
+                        } else {
+                            System.out.print(" ");
+                        }
+
+                    }
+                }
+
+            }
         }
-
     }
-}
