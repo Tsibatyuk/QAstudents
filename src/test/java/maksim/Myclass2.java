@@ -1,6 +1,9 @@
 package maksim;
 
 import org.testng.annotations.Test;
+import pisun.Studen;
+
+import java.util.Scanner;
 
 public class Myclass2 {
 
@@ -39,14 +42,91 @@ public class Myclass2 {
     }
     @Test
 public void loop() {
-    for (int i = 0; i < 7; i++) {
-        System.out.println(i);
-        for (int j = 0; j < 10; j++) {
+
+        for (int j = 1; j < 10; j++) {
             System.out.print(j);
         }
-    }
-}
-}
+    }@Test
+    public void fg(){
+
+      for (int g=40;g<120;g++){
+
+          if (g==40);
+          System.out.println(g);
+        }}
 
 
+    @Test
+    public void gg() {
 
+        for (int i = 0; i < 10; i++) {
+            if (i == 0) {
+                    System.out.print("M");}
+            if (i == 1)  {
+                    System.out.print("a");}
+            if (i == 2)
+                   {System.out.print("k");}
+            if (i == 3){
+                    System.out.print("s");}
+            if (i == 4){
+                    System.out.print("i");}
+            if (i == 5){
+                    System.out.print("m");}
+            if (i == 5){
+                    System.out.print("-");}
+            if (i == 6){
+                    System.out.print("c");}
+            if (i == 7){
+                    System.out.print("o");}
+            if (i == 8){
+                    System.out.print("o");}
+            if (i == 9){
+                    System.out.print("l");}
+        }
+        }
+
+
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+
+                System.out.println("Виберіть цифру від 1 до 3 щоб отримати подарунок:");
+
+                int number = sc.nextInt();
+
+                if (number == 1) {
+                    System.out.println("Ви можете вибрати подарунок 10 або 11 доларів");
+                } else if (number == 2) {
+                    System.out.println("Ви можете вибрати подарунок 20 або 22 доларів");
+                } else if (number == 3) {
+                    System.out.println("Ви можете вибрати подарунок 30 або 33 доларів");
+                } else {
+                    System.out.println("ERROR");
+                    sc.close();
+                    return;
+                }
+
+                System.out.println("Оберіть цифру");
+
+                int nummber = sc.nextInt();
+
+                if (nummber == 10) {
+                    System.out.println("Ви виграли 10$");
+                } else if (nummber == 11) {
+                    System.out.println("Ви виграли 11$");
+                } else if (nummber == 20) {
+                    System.out.println("Ви виграли 20$");
+                } else if (nummber == 22) {
+                    System.out.println("Ви виграли 22$");
+                } else if (nummber == 30) {
+                    System.out.println("Ви виграли 30$");
+                } else if (nummber == 33) {
+                    System.out.println("Ви виграли 33$");
+                } else {
+                    System.out.println("ERROR");
+                    sc.close();
+                    return;
+                }
+
+
+            }
+        }
