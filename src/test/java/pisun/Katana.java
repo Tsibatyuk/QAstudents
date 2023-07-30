@@ -112,41 +112,32 @@ public class Katana {
         int number = sc.nextInt();
 
         if (number == 1) {
-        System.out.println("Ти можеш вибрати бонус 10$ або 11$");
-             number = sc.nextInt();
-             if (number == 10){
-                 System.out.println("ви вибрали "+number+"$ бонус");
-             } if (number == 11){
-                 System.out.println("ви вибрали "+number+"$ бонус");
-             }else {
+            System.out.println("Ти можеш вибрати бонус 10$ або 11$");
+            number = sc.nextInt();
+            if (number == 10) {
+                System.out.println("ви вибрали " + number + "$ бонус");
+            }
+            if (number == 11) {
+                System.out.println("ви вибрали " + number + "$ бонус");
+            } else {
                 System.out.println("Ви обрали не правильний бонус");
             }
-        } else if (number == 2) {
-            System.out.println("якщо вибереш число 10 отримаєш 15");
-        }}
-
-@Test
-    public static void nain(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Привіт , вибери число від 2 до 3");
-
-        int number = sc.nextInt();
+        }
         if (number == 2) {
             System.out.println("ти можеш вибрати подарунок 15$в або 20$");
             number = sc.nextInt();
-        }
-            if (number == 15)
-                System.out.println("ви вибрали 15$"+number+",бонус");{
-            if (number == 20)
-                System.out.println("ви вибрали 20$"+number+",бонус");
-      else
-      {System.out.println("ви обрали не правильне число");
 
+            if (number == 15){
+                System.out.println("ви вибрали "+number+"$ бонус");}
+            if (number == 20){
+                System.out.println("ви вибрали "+number+"$ бонус");}
+            else {
+                System.out.println("ви обрали не правильне число");
+            }
       }
        if (number == 3) {
           System.out.println("якщо вибереш 2 отримає 20");
 
-    }}}}
+    }}}
 
 
