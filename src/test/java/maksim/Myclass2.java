@@ -95,37 +95,43 @@ public void loop() {
 
                 if (number == 1) {
                     System.out.println("Ви можете вибрати подарунок 10 або 11 доларів");
-                } else if (number == 2) {
+
+                     number = sc.nextInt();
+
+                if (number == 10) {
+                    System.out.println("Ви обрали подарунок "+ number +" $");}
+                else if (number == 11){
+                    System.out.println("Ви обрали подарунок "+ number +" $");}
+                   else {
+                 System.out.println("Ви обрали невірний бонус"); }
+                    }
+
+                if (number == 2) {
                     System.out.println("Ви можете вибрати подарунок 20 або 22 доларів");
-                } else if (number == 3) {
+
+                    number = sc.nextInt();
+
+                    if (number == 20) {
+                        System.out.println("Ви обрали подарунок "+ number +" $");}
+                    else if (number == 22){
+                        System.out.println("Ви обрали подарунок "+ number +" $");}
+                    else {
+                        System.out.println("Ви обрали невірний бонус"); }
+                }
+
+                if (number == 3) {
                     System.out.println("Ви можете вибрати подарунок 30 або 33 доларів");
-                } else {
-                    System.out.println("ERROR");
-                    sc.close();
-                    return;
-                }
 
-                System.out.println("Оберіть цифру");
+                    number = sc.nextInt();
 
-                int nummber = sc.nextInt();
+                    if (number == 30) {
+                        System.out.println("Ви обрали подарунок "+ number +" $");}
+                    else if (number == 33){
+                        System.out.println("Ви обрали подарунок "+ number +" $");}
+                    else {
+                        System.out.println("Ви обрали невірний бонус"); }
+                }sc.close();
 
-                if (nummber == 10) {
-                    System.out.println("Ви виграли 10$");
-                } else if (nummber == 11) {
-                    System.out.println("Ви виграли 11$");
-                } else if (nummber == 20) {
-                    System.out.println("Ви виграли 20$");
-                } else if (nummber == 22) {
-                    System.out.println("Ви виграли 22$");
-                } else if (nummber == 30) {
-                    System.out.println("Ви виграли 30$");
-                } else if (nummber == 33) {
-                    System.out.println("Ви виграли 33$");
-                } else {
-                    System.out.println("ERROR");
-                    sc.close();
-                    return;
-                }
 
 
             }

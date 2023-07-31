@@ -14,15 +14,11 @@ public class Myclass extends BaseTest {
     }
 
     @Test
-    public void ph(){
-     for (int i =5 ; i <= 50; i++) {
+    public void ph() {
+        for (int i = 5; i <= 50; i++) {
 
-        System.out.println(i);
+            System.out.println(i);
+        }
+    }
     }
 
-
-
-    }
-
-
-}
