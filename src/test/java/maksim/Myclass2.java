@@ -94,8 +94,9 @@ public void loop() {
                 int number = sc.nextInt();
 
                 if (number == 1) {
-                    System.out.println("Ви можете вибрати подарунок 10 або 11 доларів");
-                } else if (number == 2) {
+
+                }
+                if    System.out.println("Ви можете вибрати подарунок 10 або 11 доларів");if (number == 10) {
                     System.out.println("Ви можете вибрати подарунок 20 або 22 доларів");
                 } else if (number == 3) {
                     System.out.println("Ви можете вибрати подарунок 30 або 33 доларів");
