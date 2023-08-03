@@ -4,7 +4,7 @@ public interface Airboing {
     public void a();
 
 
-    public void b();
+    public void q();
 
 
 }
