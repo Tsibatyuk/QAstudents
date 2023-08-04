@@ -6,6 +6,11 @@ public class Haus implements W,C,D {
 
 
     @Override
+    public void hh(String[] args) {
+
+    }
+
+    @Override
     public void aa() {
         System.out.print(door);
       }
