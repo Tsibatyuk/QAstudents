@@ -15,7 +15,7 @@ public class klass {
         myList.add("Three");
          String allElement = String.valueOf(myList.stream().findFirst());
 
-        System.out.println(myList.get(2));
+        System.out.println(myList.get(1));
 
     }
 }
