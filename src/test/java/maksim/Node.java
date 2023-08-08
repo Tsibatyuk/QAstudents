@@ -1,6 +1,7 @@
 package maksim;
 
 import org.junit.Test;
+import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -42,12 +43,12 @@ public class Node {
 
 
 
-    String thirdElement = fg.stream().skip(2).findFirst().orElse(null);
+    String thirdElement = fg.stream().skip(3).findFirst().orElse(null);
 
-    // Получение последнего элемента с использованием Stream
+
     String lastElement = fg.stream().reduce((first, second) -> second).orElse(null);
 
-    // Вывод результатов
+
     System.out.println("Третий элемент: " + thirdElement);
     System.out.println("Последний элемент: " + lastElement);
 

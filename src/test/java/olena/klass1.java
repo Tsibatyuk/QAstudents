@@ -12,7 +12,7 @@ public class klass1 {
         qw.add("Maksimka");
         qw.add("Sachka");
         qw.add("Illyshka");
-        qw.add("Olenka");
+        qw.add("Olenka Pisyha");
         qw.add("EvgeniyMykolayovych");
         qw.add("Vladyshka");
         qw.add("washedpisyun");
