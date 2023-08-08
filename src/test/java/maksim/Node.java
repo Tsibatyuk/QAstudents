@@ -50,7 +50,7 @@ public class Node {
 
 
     System.out.println("Третий элемент: " + thirdElement);
-    System.out.println("Последний элемент: " + l1astElement);
+    System.out.println("Последний элемент: " + lastElement);
 
 
 }}
