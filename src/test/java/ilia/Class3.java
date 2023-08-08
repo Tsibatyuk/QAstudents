@@ -7,7 +7,7 @@ import java.util.*;
 public class Class3
 {
     @Test
-    public void class3()
+    public static void main(String[] args)
     {
         List<String> carList = new ArrayList<>();
 
