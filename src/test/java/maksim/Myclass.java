@@ -4,6 +4,9 @@ import abstractpages.BaseTest;
 import org.asynchttpclient.netty.ws.NettyWebSocket;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 
 public class Myclass extends BaseTest {
@@ -19,6 +22,19 @@ public class Myclass extends BaseTest {
 
             System.out.println(i);
         }
+    }@Test
+    public void nn() {
+        List<Integer> str = new ArrayList<>();
+        for (int i = 0; i <=10; i++) {
+            str.add(i);}
+        List<Integer> evenNumbers = str.stream()
+                .filter(num -> num % 2 == 0)
+                .sorted()
+                .collect(Collectors.toList());
+
+        evenNumbers.forEach(System.out::println);
+
+
     }
     }
 
