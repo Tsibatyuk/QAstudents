@@ -49,7 +49,7 @@ public class Node {
 
     // Вывод результатов
     System.out.println("Третий элемент: " + thirdElement);
-    System.out.println("Последний элемент: " + lastElement);
+    System.out.println("Последний элемент: " + l1astElement);
 
 
 }}
