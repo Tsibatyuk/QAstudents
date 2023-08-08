@@ -9,7 +9,7 @@ public class klass2 {
  @Test
     public void qw() {
         List<Integer> str = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 12; i++) {
            str.add(i);}
         List<Integer> evenNumbers = str.stream()
                 .filter(num -> num % 2 == 0)
