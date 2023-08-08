@@ -1,9 +1,12 @@
 package maksim;
 
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import java.util.LinkedList;
 import java.util.Map;
+
+import static java.awt.SystemColor.menu;
 
 @Test
 public class Shcool implements W,C,D{
@@ -18,6 +21,11 @@ public class Shcool implements W,C,D{
 
     @Override
     public void hh() {
+        for (int i = 0; i < 35; i++) {
+            if (i<33);
+            System.out.println(i);
+
+        }
 
     }
 
