@@ -64,4 +64,19 @@ public class Class1
             System.out.println("Products " + entry.getKey() + ": " + entry.getValue());
         }
     }
+    @Test
+
+    public void task4()
+    {
+        List <String> brandList = new ArrayList<>();
+        brandList.add("Nike");
+        brandList.add("Adidas");
+        brandList.add("NB");
+        brandList.add("Under Armour");
+        for (int i = 0; i < brandList.size(); i++)
+        {
+            System.out.println( brandList.get(i));
+        }
+
+    }
 }

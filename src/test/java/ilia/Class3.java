@@ -23,6 +23,7 @@ public class Class3
         carList.add("Chevrolet");
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("You have 10 type of car: BMW, Mercedes, Toyota, Honda, Volvo, Kia, Ford, Bugatti, Lamborghini, Chevrolet");
         System.out.print("Input number = ");
         int numberInput = scanner.nextInt();
 
@@ -34,10 +35,11 @@ public class Class3
             if(numberInput >= 1 && numberInput <= carList.size()) {
                 String brand = carBrands.get(numberInput);
                 System.out.println("Your choice car: car" + numberInput + " - " + brand);
+                break;
             }
             else
             {
-                System.out.println("False number. Input number 1 for 10" + carList.size());
+                System.out.println("False number. Input number 1 for " + carList.size());
             }
         }
     }
