@@ -79,4 +79,16 @@ public class Class1
         }
 
     }
+    @Test
+    public void task5()
+    {
+        int x = 4;
+
+        if (x > 5)
+            System.out.println("x більше за 5");
+         else
+            System.out.println("x не більше за 5");
+
+    }
+
 }
