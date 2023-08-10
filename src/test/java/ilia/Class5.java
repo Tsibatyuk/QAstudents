@@ -33,7 +33,7 @@ public class Class5 {
                 int excessiveBook = sum - 10;
                 int penalty = excessiveBook * 10;
                 System.out.println("Person has" + excessiveBook + "excess book. You need to pay 10 dollars and your penalty " + penalty );
-        }
+            }
         }
         else
         {
