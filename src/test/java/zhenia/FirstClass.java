@@ -32,6 +32,7 @@ public class FirstClass {
         }
     }
 
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -44,8 +45,7 @@ public class FirstClass {
             number = sc.nextInt();
             if (number == 10) {
                 System.out.println("ви вибрали 10");
-            }
-            if (number == 11) {
+            } else if  (number == 11) {
                 System.out.println("ви вибрали 11");
             } else {
                 System.out.println("ви вибрали не правильний бонус");
