@@ -1,3 +1,5 @@
+package venya;
+
 import java.util.Scanner;
 
 public class Class23 {
