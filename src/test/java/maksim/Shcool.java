@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Scanner;
 
 @Test
 public class Shcool implements W,C,D {
@@ -69,29 +70,35 @@ public class Shcool implements W,C,D {
 
     @Override
     public void aa() {
-      List<Object> fj = new ArrayList<>();
+        Scanner yy = new Scanner(System.in);
 
-        fj.add (3);
-        fj.add("Olenka");
-        fj.add(55);
-        fj.add("Vladik");
-        fj.add("Zenya");
-        fj.add("Sanya");
 
-        for (int i = 3; i <=5; i++) {
-            System.out.println(fj.get(i));
+            List<String> fj = new ArrayList<>();
+
+
+            fj.add("3");
+            fj.add("Olenka");
+            fj.add("55");
+            fj.add("Vladik");
+            fj.add("Zenya");
+            fj.add("Sanya");
+
+
+            while (true) {
+                System.out.println("Оберіть цифру (0-5) для виведення елемента зі списку:");
+                int input = yy.nextInt();
+
+                if (input >= 0 && input < fj.size()) {
+                    String element = fj.get(input);
+                    System.out.println("Елемент списку: " + element);
+                } else {
+                    System.out.println("Невірний індекс. Спопробуйте знову.");
+
+                    yy.close();
+                }
+
+            }
+
         }
 
-
-
-//      System.out.println(fj.get(4)) ;
     }
-
-    @Override
-    public void ss() {
-    }
-
-
-
-    }
-

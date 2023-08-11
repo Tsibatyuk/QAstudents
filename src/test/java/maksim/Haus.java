@@ -15,9 +15,9 @@ public class Haus implements W,C,D {
         System.out.print(door);
       }
 
-    @Override
-    public void ss() {
-        System.out.print(window);}
+//    @Override
+//    public void ss() {
+//        System.out.print(window);}
 
 
     @Override
