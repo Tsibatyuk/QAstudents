@@ -3,6 +3,7 @@ package maksim;
 import org.testng.annotations.Test;
 import pisun.Studen;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Myclass2 {
@@ -106,7 +107,7 @@ public class Myclass2 {
     }
 
 
-    public static void main(String[] args) {
+    public static void main2(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Виберіть цифру від 1 до 3 щоб отримати подарунок:");
@@ -157,8 +158,45 @@ public class Myclass2 {
         sc.close();
     }
 
+    public static void main(String[] args) {
 
+        Scanner uu = new Scanner(System.in);
+
+        int y = uu.nextInt();
+        System.out.println("Людина взяла в бібліотеці " + y + " книок ");
+        int x = uu.nextInt();
+        int z = y + x;
+        if (x > 0) {
+            System.out.println("Людіна хоче взяти ще " + x + " книжок ");
+
+            System.out.println("Людина взяла сумарно " + z + " Книжок ");
+            if (z > 10) {
+                int a = z - 10;
+                System.out.println("Людина перевищила ліміт на " + a + " Книжок");
+                int b = a * 10;
+                System.out.println("Штраф за перевищення ліміту книжок " + b);
+
+
+            } else if (z<=10) {
+                System.out.println("Сумарна кількість взятих книжок" + z);
+
+            }
+        }else if (x <= 0){
+            System.out.println("Людіна не взяла нових книжок");
+
+        }if (z > 10){
+            int a = z - 10;
+            System.out.println("Людина перевищила ліміт на " + a + " Книжок");
+            int b = a * 10;
+            System.out.println("Штраф за перевищення ліміту книжок " + b);
+
+        }
     }
+}
+
+
+
+
 
 
 
