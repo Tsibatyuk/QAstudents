@@ -1,3 +1,5 @@
+package venya;
+
 import java.util.*;
 
 public class Class24 {
