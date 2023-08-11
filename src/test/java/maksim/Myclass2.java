@@ -174,7 +174,7 @@ public class Myclass2 {
                 int a = z - 10;
                 System.out.println("Людина перевищила ліміт на " + a + " Книжок");
                 int b = a * 10;
-                System.out.println("Штраф за перевищення ліміту книжок " + b);
+                System.out.println("Штраф за перевищення ліміту книжок " + b + "Грошей");
 
 
             } else if (z<=10) {
@@ -188,7 +188,7 @@ public class Myclass2 {
             int a = z - 10;
             System.out.println("Людина перевищила ліміт на " + a + " Книжок");
             int b = a * 10;
-            System.out.println("Штраф за перевищення ліміту книжок " + b);
+            System.out.println("Штраф за перевищення ліміту книжок " + b +"Грошей");
 
         }
     }
