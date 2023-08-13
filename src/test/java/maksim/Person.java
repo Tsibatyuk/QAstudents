@@ -9,7 +9,9 @@ public class Person {
     private static Comparator<? super Person> getName;
     String gender;
     String name;
-    int a{
+    int age = 4;
+
+    public Person(String іван, int i, String м) {
     }
 
 
@@ -27,7 +29,7 @@ public String getGender(){
     return gender;
 }
 
-    public  void ryr() {
+    public  static void main(String[] args) {
 
     List<Person> people = new  ArrayList<>();
         people.add(new Person("Анна", 30, "Ж"));
@@ -44,5 +46,5 @@ public String getGender(){
                 .collect(Collectors.toList());
 
         filtered.forEach(System.out::println);
-}
+    }
 }
