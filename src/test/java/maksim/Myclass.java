@@ -33,6 +33,11 @@ public class Myclass extends BaseTest {
                 .collect(Collectors.toList());
 
         evenNumbers.forEach(System.out::println);
+    }@Test
+    public void sec(){
+        Test1 test1 = new Test1();
+        System.out.println(test1.result);
+        System.out.println(test1.summ(5,5));
 
 
     }
