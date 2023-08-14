@@ -1,56 +1,37 @@
 package maksim;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.stream.Collectors;
-
 public class Person {
-    String gender;
     String name;
-    int age;
+    String color;
+    double weigh;
 
-    public Person(String name, int age, String gender) {
+    public Person(String name, String color, double weigh) {
         this.name = name;
-        this.age = age;
-        this.gender = gender;
-    }
-
-    public Person(String name, int age){
-        this.name = name;
-        this.age = age;
-    }
-
-    public Person(String name){
-        this.name = name;
+        this.color = color;
+        this.weigh = weigh;
     }
 
     public String getName() {
         return name;
     }
 
-    public int getAge() {
-        return age;
+     public void setName(String name) {
+        this.name = name;
     }
 
-    public String getGender() {
-        return gender;
+    public String getColor() {
+        return color;
     }
 
-    public static void main(String[] args) {
-        List<Person> people = new ArrayList<>();
-        people.add(new Person("Анна", 30, "Ж"));
-        people.add(new Person("іван", 28, "М"));
-        people.add(new Person("Марія", 22, "Ж"));
-        people.add(new Person("Петька", 35, "М"));
-        people.add(new Person("Екатерина", 26, "Ж"));
+    public void setColor(String color) {
+        this.color = color;
+    }
 
-        List<String> filtered = people.stream()
-                .filter(person -> person.getAge() > 25)
-                .sorted(Comparator.comparing(Person::getName))
-                .map(person -> person.getName() + " "+person.getGender()+" - " + person.getAge())
-                .collect(Collectors.toList());
+    public double getWeigh() {
+        return weigh;
+    }
 
-        filtered.forEach(System.out::println);
+    public void setWeigh(double weigh) {
+        this.weigh = weigh;
     }
 }
