@@ -26,8 +26,7 @@ public class Auto2 {
         String input = scanner.nextLine();
 
         List<String> filteredCars = qm.stream()
-                .filter(car -> car.startsWith(input))
-                .toList();
+                .filter(car -> car.startsWith(input)).toList();
 
         System.out.println("cars starting with '" + input + "': " + filteredCars);
     }

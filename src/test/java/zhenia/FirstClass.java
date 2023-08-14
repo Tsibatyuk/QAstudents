@@ -2,6 +2,7 @@ package zhenia;
 
 import org.testng.annotations.Test;
 
+import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 
 public class FirstClass {
@@ -62,6 +63,31 @@ public class FirstClass {
         } else {
             System.out.println("ви вибрали не правильну цифру");
         }
+
+    }
+
+    Persona anna = new Persona("Anna", 25);
+    Persona olenka = new Persona("Olena", 32, 172);
+    Persona lida = new Persona("Lida", 18, 165, 120.102, 3.05);
+
+    Examples vik = new Examples(75);
+
+
+    @Test
+    public void somePerson(){
+        System.out.println(anna.getAge()+" " + anna.getName() +" "+ anna.getWeight());
+        System.out.println(olenka.getName()+ " "+olenka.getAge()+ " "+olenka.getLanght());
+        System.out.println(lida.getName()+" "+ lida.getAge()+" "+lida.getLanght()+" "+lida.getWeight());
+
+        anna.setAge(48);
+        anna.setLanght(12);
+
+        System.out.println(anna.getName()+" "+anna.getAge()+" "+ anna.getLanght());
+        System.out.println(lida.getName()+" "+lida.getLenghtOfTheDick());
+        lida.setLenghtOfTheDick(11);
+        System.out.println(lida.getName()+" "+lida.getLenghtOfTheDick());
+
+
 
     }
 
