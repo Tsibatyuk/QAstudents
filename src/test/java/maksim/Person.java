@@ -28,7 +28,6 @@ public class Person {
         return gender;
     }
 
-
     public static void main(String[] args) {
         List<Person> people = new ArrayList<>();
         people.add(new Person("Анна", 30, "Ж"));
