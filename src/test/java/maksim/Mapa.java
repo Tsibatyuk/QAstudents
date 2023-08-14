@@ -44,6 +44,7 @@ public class Mapa {
         cars.add("chevrolet");
         cars.add("ferrari");
 
+
         Map<Integer, String> car = new HashMap<>();
         for (int j = 0; j < cars.size(); j++) {
             car.put(j + 1, cars.get(j));
@@ -52,6 +53,18 @@ public class Mapa {
         for (Map.Entry<Integer, String> entry : car.entrySet()) {
             Integer key = entry.getKey();
             String value = entry.getValue();
+
+
+
+        Map<Integer, String> car = new HashMap<>();
+        for (int j = 0; j < cars.size(); j++) {
+            car.put(j + 1, cars.get(j));
+        }
+
+        for (Map.Entry<Integer, String> entry : car.entrySet()) {
+            Integer key = entry.getKey();
+            String value = entry.getValue();
+
 
             System.out.println("Key: " + key + ", Value: " + value);
             System.out.println(String.format("Key: %s, Value: %s", key, value));
@@ -109,6 +122,7 @@ public class Mapa {
     car.add("audi");
     car.add("wv");
     car.add("ferrari");
+
 
 
 }}
