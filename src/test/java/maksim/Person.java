@@ -11,7 +11,7 @@ public class Person {
     String name;
     int age = 4;
 
-    public Person(String іван, int i, String м) {
+    public Person(int i, String gender) {
     }
 
 
@@ -32,11 +32,11 @@ public String getGender(){
     public  static void main(String[] args) {
 
     List<Person> people = new  ArrayList<>();
-        people.add(new Person("Анна", 30, "Ж"));
-        people.add(new Person("іван", 28, "М"));
-        people.add(new Person("Марія", 22, "Ж"));
-        people.add(new Person("Петька", 35, "М"));
-        people.add(new Person("Екатерина", 26, "Ж"));
+        people.add(new Person(30, "Ж"));
+        people.add(new Person(28, "М"));
+        people.add(new Person(22, "Ж"));
+        people.add(new Person(35, "М"));
+        people.add(new Person(26, "Ж"));
 
 
         List<String> filtered = people.stream()
