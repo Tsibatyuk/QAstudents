@@ -34,7 +34,8 @@ public class Class9 {
 
         List<String> filteredCars = new ArrayList<>();
         IntStream.range(0, carList.size())
-                .forEach(index -> {String car = carList.get(index);
+                .forEach(index -> {
+                    String car = carList.get(index);
                     if(car.startsWith(String.valueOf(targetLetter)))
                     {
                         filteredCars.add(car);

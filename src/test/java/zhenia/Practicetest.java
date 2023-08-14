@@ -22,11 +22,15 @@ public class Practicetest {
         carList.add("Chevrolet");
 
         Map<Integer, String> carListTest = new HashMap<>();
-        IntStream.range(0, carList.size())
-                .forEach(i -> carListTest.put(i + 1, carList.get(i)));
+
+        IntStream.range(0, carList.size()).forEach(i -> carListTest.put(i + 1, carList.get(i)));
         Scanner sc = new Scanner(System.in);
         int carNum = sc.nextInt();
         System.out.println(carListTest.get(carNum));
+
+        for (int i = 0; i <carList.size() ; i++) {
+            carListTest.put(i + 1, carList.get(i));
+        }
     }
 
 
