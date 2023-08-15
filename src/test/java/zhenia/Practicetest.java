@@ -31,6 +31,9 @@ public class Practicetest {
         for (int i = 0; i <carList.size() ; i++) {
             carListTest.put(i + 1, carList.get(i));
         }
+
+        FirstClass fc = new FirstClass();
+        fc.x = 10;
     }
 
 

@@ -7,8 +7,7 @@ import java.util.Scanner;
 
 public class FirstClass {
 
-
-    int x = 1;
+    static int x = 1;
 
     @Test
     public void cold() {
@@ -88,7 +87,13 @@ public class FirstClass {
         System.out.println(lida.getName()+" "+lida.getLenghtOfTheDick());
 
 
+        String kaka = "slovo";
+        String nekaka = new String ("slovo");
 
+        System.out.println(kaka == nekaka);
+        System.out.println(kaka.equals(nekaka));
+        System.out.println(kaka.hashCode());
+        System.out.println(nekaka);
     }
 
 
