@@ -1,40 +1,34 @@
 package maksim;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.stream.Collectors;
-
 public class Person {
-    String gender;
     String name;
-    int age;
+    String color;
+    double weigh;
 
-    public Person(String name, int age, String gender) {
+    public Person(String name, String color, double weigh) {
         this.name = name;
-        this.age = age;
-        this.gender = gender;
-    }
-
-    public Person(String name, int age){
-        this.name = name;
-        this.age = age;
-    }
-
-    public Person(String name){
-        this.name = name;
+        this.color = color;
+        this.weigh = weigh;
     }
 
     public String getName() {
         return name;
     }
 
-    public int getAge() {
-        return age;
+     public void setName(String name) {
+        this.name = name;
     }
 
-    public String getGender() {
-        return gender;
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getWeigh() {
+        return weigh;
     }
 
     public static void main(String[] args) {
@@ -52,5 +46,9 @@ public class Person {
                 .collect(Collectors.toList());
 
         filtered.forEach(System.out::println);
+
+    public void setWeigh(double weigh) {
+        this.weigh = weigh;
+}
     }
 }
