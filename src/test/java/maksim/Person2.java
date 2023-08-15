@@ -39,8 +39,26 @@ public class Person2 {
 
 
         }
+    }
+
+    @Test
+    public void yut() {
+        int[] i = {1, 3, 6, 7, 0, 0, 0};
+        for (int j = 0; j < i.length; j++) {
+            System.out.println(i[j]);
+
+        }
+    }
+
+    @Test
+    public void yut1() {
+        int[][] iq = {{1, 2, 3},{15, 12, 18}};
+        for (int j = 0; j < iq.length; j++) {
+            System.out.println(iq[j]);
+
+        }
 
 
-    }}
-
+    }
+}
 

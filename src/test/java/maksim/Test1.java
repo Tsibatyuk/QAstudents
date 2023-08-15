@@ -70,6 +70,7 @@ public void kok(){
     WebDriverManager.chromedriver().setup();
     WebDriver driver = new ChromeDriver();
     driver.get("https://chat.openai.com/?model=text-davinci-002-render-sha");
+
 }@Test
 public void tot(){
         String fot="tersythtgdfre dfgzfgdf vbgdbzf";
