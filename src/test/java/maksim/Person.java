@@ -39,11 +39,11 @@ public class Person {
 
     public static void main(String[] args) {
         List<Person> people = new ArrayList<>();
-        people.add(new Person("Анна", 30, "Ж"));
+        /*people.add(new Person("Анна", 30, "Ж"));
         people.add(new Person("іван", 28, "М"));
         people.add(new Person("Марія", 22, "Ж"));
         people.add(new Person("Петька", 35, "М"));
-        people.add(new Person("Екатерина", 26, "Ж"));
+        people.add(new Person("Екатерина", 26, "Ж"));*/
 
         List<String> filtered = people.stream()
                 .filter(person -> person.getAge() > 25)
