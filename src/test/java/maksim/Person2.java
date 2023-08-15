@@ -2,10 +2,7 @@ package maksim;
 
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.IntStream;
 
 @Test
@@ -43,7 +40,7 @@ public class Person2 {
 
     @Test
     public void yut() {
-        int[] i = {1, 3, 6, 7, 0, 0, 0};
+        String [] i = {"r", "gjh", "gjhh"};
         for (int j = 0; j < i.length; j++) {
             System.out.println(i[j]);
 
@@ -53,10 +50,25 @@ public class Person2 {
     @Test
     public void yut1() {
         int[][] iq = {{1, 2, 3},{15, 12, 18}};
-        for (int j = 0; j < iq.length; j++) {
+        for (int j = 0; j < iq.length; j++) { //вкликаю довжину масиву .lenght
             System.out.println(iq[j]);
 
         }
+    }public void ar(){
+        double [] rr = {20,02,30.01,22.04,43.34,45 };
+       rr [0]=1;
+       rr [1]=2;
+       rr [2]=3;
+       rr [3]=4;
+       rr [4]=5;
+       rr [5]=6;
+       
+       IntStream.iterate(0, i -> {
+                   boolean b = i <= Arrays.stream(rr).sorted().sum();
+                   return b;
+                }, i -> i + 1)
+                .forEach(System.out::println);
+        //Порахувало елементи в масиві
 
 
     }
