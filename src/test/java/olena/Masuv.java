@@ -21,6 +21,6 @@ public class Masuv {
             System.out.println(number[i]);
 
 
-    }
 
+    }
 }
