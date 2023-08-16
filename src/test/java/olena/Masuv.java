@@ -18,7 +18,7 @@ public class Masuv {
         for (int i = 0; i < number.length; i++)  //цим методом я викликаю довжину масиву
 
 
-System.out.println(number[i]);
+            System.out.println(number[i]);
 
 
     }

@@ -1,5 +1,7 @@
 package zhenia;
 
+import org.testng.annotations.Test;
+
 public class Examples {
     public Examples(int age) {
         this.age = age;
@@ -14,6 +16,7 @@ public class Examples {
     }
 
     int age;
+
 
 
 }
