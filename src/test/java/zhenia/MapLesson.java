@@ -1,6 +1,7 @@
 package zhenia;
 
 import ilia.Person;
+import org.testng.annotations.Test;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -40,6 +41,15 @@ public class MapLesson {
 //            System.out.println("Height: " + people[i].getHeight() + "Cm");
 //            System.out.println("*****************");
 //        }
-
+@Test
+public void exmethodForDebug(){
+    System.out.println(1);
+    System.out.println(2);
+    System.out.println(3);
+    System.out.println(4);
+    System.out.println(5);
+    System.out.println(6);
+    System.out.println(7);
+}
 
 }

@@ -35,6 +35,28 @@ public class Practicetest {
         FirstClass fc = new FirstClass();
         fc.x = 10;
     }
+    @Test
+    public void arrays(){
+            int [] number = {8787,45345,3,4,5,6,7,9878766};  //створила масив в якому буде 6 обєктів
+
+            number[0] = 10;
+            number[1] = 20;
+            number[2] = 30;
+            number[3] = 40;
+            number[4] = 50;
+            number[5] = 60;
+            number[6] = 70;
+            number[7] = 70;
+
+
+            for (int i = 0; i < number.length; i++)  //цим методом я викликаю довжину масиву
+
+
+                System.out.println(number[i]);
+
+
+        }
+
 
 
 }
