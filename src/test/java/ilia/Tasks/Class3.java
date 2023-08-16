@@ -1,4 +1,4 @@
-package ilia;
+package ilia.Tasks;
 
 import org.testng.annotations.Test;
 
