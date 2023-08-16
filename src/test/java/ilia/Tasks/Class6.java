@@ -1,4 +1,4 @@
-package ilia;
+package ilia.Tasks;
 
 import java.util.*;
 import java.util.stream.IntStream;

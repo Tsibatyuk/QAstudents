@@ -1,4 +1,6 @@
-package ilia;
+package ilia.Constructor;
+
+import ilia.Constructor.Person;
 
 import java.util.HashMap;
 import java.util.LinkedList;
