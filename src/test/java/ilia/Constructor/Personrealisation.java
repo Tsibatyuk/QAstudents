@@ -33,7 +33,7 @@ public class Personrealisation {
         }
 
 
-        Map<Integer, String> peopleNames = new HashMap<>();
+        // Map<Integer, String> peopleNames = new HashMap<>();
         for (int i = 0; i < names.size(); i++)
         {
             System.out.println("**************************");
