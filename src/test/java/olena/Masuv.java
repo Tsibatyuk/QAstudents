@@ -4,8 +4,8 @@ import org.testng.annotations.Test;
 
 @Test
 public class Masuv {
-    public void qqq (){
-        int [] number = new int[6];  //створила масив в якому буде 6 обєктів
+    public void qqq() {
+        int[] number = new int[6];  //створила масив в якому буде 6 обєктів
 
         number[0] = 10;
         number[1] = 20;
@@ -18,10 +18,9 @@ public class Masuv {
         for (int i = 0; i < number.length; i++)  //цим методом я викликаю довжину масиву
 
 
-System.out.println(number[i]);
+            System.out.println(number[i]);
 
 
 
     }
-
 }
