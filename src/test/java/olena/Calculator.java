@@ -2,7 +2,7 @@ package olena;
 
 import java.util.Scanner;
 
-public class Calculator {
+public abstract class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int q = scanner.nextInt();
@@ -15,4 +15,6 @@ public class Calculator {
 
 
     }
+
+    public abstract int calculate(int a, int b);
 }
