@@ -1,4 +1,4 @@
-package ilia.Tasks;
+package ilia.Stream;
 
 import org.testng.reporters.AbstractXmlReporter;
 
@@ -75,5 +75,7 @@ public class Task_for_stream {
                 .findFirst()
                 .orElse(" ");
         System.out.println("Your favorite word in the world is - " + randomWord);
+
+
     }
 }
