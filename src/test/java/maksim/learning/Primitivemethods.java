@@ -1,4 +1,4 @@
-package maksim;
+package maksim.learning;
 
 public class Primitivemethods {
     public static void main() {
