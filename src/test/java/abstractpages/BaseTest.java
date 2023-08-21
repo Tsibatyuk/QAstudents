@@ -19,7 +19,7 @@ abstract public class BaseTest {
 
     @BeforeMethod
     public void setUpDriver() {
-        WebDriver driver = DriverFactory.getDriver(Browser.EDGE);
+        WebDriver driver = DriverFactory.getDriver(Browser.CHROME);
         DriverPoll.setWebDriver(driver);
         Config.setBaseUrl(PropertiesUtil.getProperty("url"));
     }
