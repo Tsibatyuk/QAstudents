@@ -1,4 +1,4 @@
-package pisun;
+package oleksandr.smeshkin;
 
 import abstractpages.BaseTest;
 import org.testng.annotations.Test;
@@ -11,7 +11,6 @@ public class Studen extends BaseTest {
 //    String userInput = scanner.nextLine();
 //        System.out.println(userInput);
 //            scanner.close();
-openUrl("https://jysk.ua");
+
     }
 }
-
