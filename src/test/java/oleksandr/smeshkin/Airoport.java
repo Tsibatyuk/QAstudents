@@ -11,7 +11,7 @@ Airoport implements Airboing,Airboing2222,Airboing2323 {
     public void a() {System.out.print(terminal);}
 
     @Override
-    public void q() {
+    public void  q() {
 
     }
 
