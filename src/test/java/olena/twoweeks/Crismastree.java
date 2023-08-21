@@ -1,4 +1,4 @@
-package olena;
+package olena.twoweeks;
 
 public class Crismastree {
     public static void main(String[] args) {
