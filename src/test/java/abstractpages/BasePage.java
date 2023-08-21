@@ -31,5 +31,8 @@ abstract public class BasePage {
         }
     }
 
+    public void openUrl(String url){
+        DriverPoll.getDriver().get(url);
+    }
 
 }
