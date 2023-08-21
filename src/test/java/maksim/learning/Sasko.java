@@ -1,4 +1,4 @@
-package maksim;
+package maksim.learning;
 
 import org.testng.annotations.Test;
 
@@ -36,11 +36,8 @@ public void Primitives(){
                     .sorted()
             .collect(Collectors.toList());
     System.out.println(u);
+}
 
-
-
-
-    }
 
 
   }

@@ -1,4 +1,4 @@
-package maksim;
+package maksim.learning;
 
 public class Person {
     String name;

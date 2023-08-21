@@ -1,6 +1,7 @@
-package maksim;
+package maksim.learning;
 
-import com.google.errorprone.annotations.Var;
+import maksim.learning.C;
+import maksim.learning.D;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
@@ -9,7 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 @Test
-public class Shcool implements W,C,D {
+public class Shcool implements W, C, D {
     @Override
     public void hh(String[] args) {
 

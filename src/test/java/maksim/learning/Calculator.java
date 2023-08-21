@@ -1,4 +1,4 @@
-package maksim;
+package maksim.learning;
 
 import org.openqa.selenium.support.ui.Wait;
 

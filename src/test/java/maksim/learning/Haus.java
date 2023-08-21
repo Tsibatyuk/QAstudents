@@ -1,6 +1,9 @@
-package maksim;
+package maksim.learning;
 
-public class Haus implements W,C,D {
+import maksim.learning.C;
+import maksim.learning.D;
+
+public class Haus implements W, C, D {
     int  door = 7;
     int window = 10;
 
