@@ -1,4 +1,4 @@
-package venya;
+package venya.twoweek;
 
 import java.util.*;
 
