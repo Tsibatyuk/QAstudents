@@ -1,11 +1,7 @@
 package pisun;
 
-import abstractpages.BasePage;
 import abstractpages.BaseTest;
 import org.testng.annotations.Test;
-import zhenia.FirstClass;
-
-import java.util.Scanner;
 
 public class Studen extends BaseTest {
 
