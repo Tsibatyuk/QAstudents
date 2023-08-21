@@ -21,8 +21,16 @@ public class Class27 {
 
 
         qm.stream()
-                .filter(car -> car.startsWith("L"))
+                .filter(car -> car.startsWith("C"))
                 .forEach(System.out::println);
     }
 
 }
+
+
+
+
+
+
+
+
