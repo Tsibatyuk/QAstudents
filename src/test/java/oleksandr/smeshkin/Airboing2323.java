@@ -1,4 +1,4 @@
-package pisun;
+package oleksandr.smeshkin;
 
 public interface Airboing2323 {
   public void i();

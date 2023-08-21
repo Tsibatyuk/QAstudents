@@ -1,11 +1,7 @@
-package pisun;
+package oleksandr.smeshkin;
 
-import abstractpages.BasePage;
 import abstractpages.BaseTest;
 import org.testng.annotations.Test;
-import zhenia.FirstClass;
-
-import java.util.Scanner;
 
 public class Studen extends BaseTest {
 
@@ -15,7 +11,7 @@ public class Studen extends BaseTest {
 //    String userInput = scanner.nextLine();
 //        System.out.println(userInput);
 //            scanner.close();
-openUrl("https://jysk.ua");
+
     }
 }
 
