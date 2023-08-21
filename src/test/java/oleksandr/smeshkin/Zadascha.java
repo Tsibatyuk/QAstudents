@@ -1,6 +1,4 @@
-package pisun;
-
-import org.testng.annotations.Test;
+package oleksandr.smeshkin;
 
 import java.util.Scanner;
 

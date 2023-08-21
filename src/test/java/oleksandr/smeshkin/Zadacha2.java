@@ -1,4 +1,4 @@
-package pisun;
+package oleksandr.smeshkin;
 
 import java.util.*;
 import java.util.stream.IntStream;
