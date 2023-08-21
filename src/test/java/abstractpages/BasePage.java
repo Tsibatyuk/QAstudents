@@ -54,23 +54,23 @@ abstract public class BasePage {
         wait.until(ExpectedConditions.numberOfWindowsToBe(tabNumber));
     }
 
-    @SneakyThrows
-    public void waitTillCircleLoaderDisappear(String locator) {
-        waitUntilElementToBeInvisibilityByXpath(locator);
-        Thread.sleep(100);
-    }
+//    @SneakyThrows
+//    public void waitTillCircleLoaderDisappear(String locator) {
+//        waitUntilElementToBeInvisibilityByXpath(locator);
+//        Thread.sleep(100);
+//    }
 
-    @SneakyThrows
-    public void waitTillVehicleLoaderDisappear(String locator) {
-        waitUntilElementToBeInvisibilityByXpath(locator);
-        Thread.sleep(100);
-    }
+//    @SneakyThrows
+//    public void waitTillVehicleLoaderDisappear(String locator) {
+//        waitUntilElementToBeInvisibilityByXpath(locator);
+//        Thread.sleep(100);
+//    }
 
-    @SneakyThrows
-    public void waitTillButtonLoaderDisappear(String locator) {
-        waitUntilElementToBeInvisibilityByXpath(locator);
-        Thread.sleep(100);
-    }
+//    @SneakyThrows
+//    public void waitTillButtonLoaderDisappear(String locator) {
+//        waitUntilElementToBeInvisibilityByXpath(locator);
+//        Thread.sleep(100);
+//    }
 
     protected void click(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element)).click();
