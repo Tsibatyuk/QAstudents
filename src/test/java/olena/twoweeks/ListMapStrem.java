@@ -1,4 +1,4 @@
-package olena;
+package olena.twoweeks;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,10 +31,10 @@ public class ListMapStrem {
         }
         List<String> sortedZoo2= zoo2.stream()
 
-                .sorted((animal1, animal2) -> Integer.compare(animal1.length(), animal2.length())) // Сортування за довжиною рядків
-                .collect(Collectors.toList());
-        //.sorted()
-        //.collect(Collectors.toList());
+               // .sorted((animal1, animal2) -> Integer.compare(animal1.length(), animal2.length())) // Сортування за довжиною рядків
+               // .collect(Collectors.toList());
+        .sorted()
+        .collect(Collectors.toList());
         for (String animal:sortedZoo2){
            System.out.println(animal);
 

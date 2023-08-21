@@ -1,4 +1,4 @@
-package olena;
+package olena.twoweeks;
 
 import java.sql.SQLOutput;
 import java.util.Scanner;
