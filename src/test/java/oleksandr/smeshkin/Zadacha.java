@@ -1,6 +1,5 @@
-package pisun;
+package oleksandr.smeshkin;
 
-import abstractpages.BaseTest;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;

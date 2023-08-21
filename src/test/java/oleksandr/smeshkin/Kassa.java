@@ -1,4 +1,4 @@
-package pisun;
+package oleksandr.smeshkin;
 
 import org.testng.annotations.Test;
 
