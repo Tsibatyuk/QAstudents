@@ -1,9 +1,9 @@
 package abstractpages;
 
+import driver.DriverPoll;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -11,13 +11,12 @@ import java.time.Duration;
 
 abstract public class BasePage {
 
-    protected WebDriver driver;
     protected WebDriverWait wait;
     private int BASE_WAIT = 5;
 
-    public BasePage(WebDriver driver) {
-        this.driver = driver;
-        wait = new WebDriverWait(driver, Duration.ofSeconds(BASE_WAIT));
+    public BasePage() {
+        wait = new WebDriverWait(DriverPoll.getDriver(), Duration.ofSeconds(15));
+        PageFactory.initElements(DriverPoll.getDriver(), this);
     }
 
     protected WebElement waitUntilElementToBeClickableByXpath(String locator) {
@@ -32,8 +31,5 @@ abstract public class BasePage {
         }
     }
 
-    public void moveCursourByCordinate(int x, int y){
-        Actions actions = new Actions(driver);
-        actions.moveByOffset( x, y).perform();
-    }
+
 }

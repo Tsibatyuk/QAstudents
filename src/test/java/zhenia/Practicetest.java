@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 
 public class Practicetest {
 
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
         List<String> carList = new ArrayList<>();
 
         carList.add("BMW");
@@ -199,6 +199,40 @@ public void tree(){
         }
         System.out.println();
     }
+
+
+
+    }
+public static void main(String[]arg){
+    System.out.println("ведіть перше число");
+    Scanner nnnn = new Scanner(System.in);
+    int nomber1 = nnnn.nextInt();
+
+    System.out.println("ведіть друге число");
+    int nomber2 = nnnn.nextInt();
+
+    System.out.println("вибери дію ");
+    nnnn.nextLine();
+    char mm1 = nnnn.nextLine().charAt(0);
+
+    int rezalt;
+    switch (mm1){
+        case '+':
+            rezalt = nomber1 + nomber2;
+            System.out.println(rezalt);
+            break;
+
+        case '-':
+            rezalt =nomber1 - nomber2;
+            System.out.println(rezalt);
+            break;
+        case '*':
+            rezalt = nomber1 * nomber2;
+            System.out.println(rezalt);
+            break;
+    }
+
+
 }
 }
 
