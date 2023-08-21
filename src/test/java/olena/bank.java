@@ -18,7 +18,7 @@ public class bank {
             if (summ > 100000) {
                 int morelimit = summ - 100000;
                 int penaly = morelimit * 10;
-                System.out.println("кредит був перевищен на " + morelimit + " через що кретор має ваплатити штраф 10 відстотків від суми надлишку, яка складе "+ penaly);
+                System.out.println("кредит був переви на " + morelimit + " через що кретор має ваплатити штраф 10% від суми надлишку, яка складе "+ penaly);
             }
 
         }
