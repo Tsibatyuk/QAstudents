@@ -1,4 +1,4 @@
-package olena;
+package olena.twoweeks;
 
 public class Person1 {
 
