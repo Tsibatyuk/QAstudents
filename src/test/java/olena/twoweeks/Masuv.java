@@ -1,4 +1,4 @@
-package olena;
+package olena.twoweeks;
 
 import org.testng.annotations.Test;
 

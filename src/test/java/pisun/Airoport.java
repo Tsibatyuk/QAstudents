@@ -1,6 +1,8 @@
 package pisun;
 
-public class Airoport implements Airboing,Airboing2222,Airboing2323 {
+public class
+
+Airoport implements Airboing,Airboing2222,Airboing2323 {
      int terminal = 1;
 
      int termainal2 = 2;
