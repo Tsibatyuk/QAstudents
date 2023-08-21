@@ -1,4 +1,4 @@
-package zhenia;
+package zhenia.justlessons;
 
 public class Sashaconstructor {
 

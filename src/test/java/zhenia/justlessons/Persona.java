@@ -1,4 +1,4 @@
-package zhenia;
+package zhenia.justlessons;
 
 import abstractpages.BasePage;
 import org.testng.annotations.Test;
