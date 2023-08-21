@@ -1,4 +1,4 @@
-package maksim;
+package maksim.learning;
 
 import abstractpages.BaseTest;
 import org.asynchttpclient.netty.ws.NettyWebSocket;
@@ -14,6 +14,9 @@ public class Myclass extends BaseTest {
     @Test
     public void someMethod() {
         openUrl("https://www.google.com/");
+    }
+
+    private void openUrl(String url) {
     }
 
     @Test

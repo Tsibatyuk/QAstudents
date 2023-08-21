@@ -1,19 +1,15 @@
-package maksim;
+package maksim.learning;
 
-import org.junit.Test;
-import org.openqa.selenium.WebElement;
+
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class Node {
     private static LinkedList<Integer> ll=new LinkedList<>();
-@Test
+
     public void main() {
 
        ll.add(10);
@@ -29,7 +25,7 @@ public class Node {
 
 
     ArrayList<String> fg=new ArrayList<>();
-@Test
+
     public void ntg(){
 
         fg.add("Сашка");

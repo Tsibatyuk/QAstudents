@@ -1,9 +1,7 @@
-package maksim;
+package maksim.learning;
 
 import org.testng.annotations.Test;
-import pisun.Studen;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Myclass2 {

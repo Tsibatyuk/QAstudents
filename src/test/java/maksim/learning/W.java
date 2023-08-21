@@ -1,4 +1,4 @@
-package maksim;
+package maksim.learning;
 
 public interface W {
     void hh(String[] args);
