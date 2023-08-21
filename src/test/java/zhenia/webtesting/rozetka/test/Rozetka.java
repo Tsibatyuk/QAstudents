@@ -9,7 +9,8 @@ public class Rozetka extends BaseTest {
     @Test
     public void rozetkaTest(){
         Mainpage mp = new Mainpage();
-        mp.openRozetka();
+        mp.openRozetka()
+                        .assertUrl();
         sleep(4);
 
     }
