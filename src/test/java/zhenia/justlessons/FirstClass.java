@@ -1,8 +1,7 @@
-package zhenia;
+package zhenia.justlessons;
 
 import org.testng.annotations.Test;
 
-import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 
 public class FirstClass {
