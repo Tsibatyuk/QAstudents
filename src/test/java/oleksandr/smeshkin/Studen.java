@@ -1,7 +1,7 @@
 package oleksandr.smeshkin;
 
-import abstractpages.BaseTest;
 import org.testng.annotations.Test;
+import tests.BaseTest;
 
 public class Studen extends BaseTest {
 

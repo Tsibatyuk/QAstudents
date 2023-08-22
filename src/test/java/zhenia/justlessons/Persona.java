@@ -1,6 +1,5 @@
 package zhenia.justlessons;
 
-import abstractpages.BasePage;
 import org.testng.annotations.Test;
 
 public class Persona {

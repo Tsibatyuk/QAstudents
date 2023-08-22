@@ -1,9 +1,9 @@
 package maksim.webtesting.rozetka.pages;
 
-import abstractpages.BasePage;
 import driver.DriverPoll;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.BasePage;
 
 public class Mainpage extends BasePage {
     @Test
