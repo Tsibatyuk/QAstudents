@@ -1,8 +1,8 @@
 package oleksandr.webtesting.rozetka.test;
 
-import abstractpages.BaseTest;
 import oleksandr.webtesting.rozetka.pages.Mainpj;
 import org.testng.annotations.Test;
+import tests.BaseTest;
 
 public class Rozetka extends BaseTest {
     @Test

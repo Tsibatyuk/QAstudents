@@ -1,8 +1,8 @@
 package zhenia.webtesting.rozetka.pages;
 
-import abstractpages.BasePage;
 import driver.DriverPoll;
 import org.testng.Assert;
+import pages.BasePage;
 import utiles.Config;
 
 public class Mainpage extends BasePage {

@@ -1,7 +1,7 @@
 package zhenia.webtesting.rozetka.test;
 
-import abstractpages.BaseTest;
 import org.testng.annotations.Test;
+import tests.BaseTest;
 import zhenia.webtesting.rozetka.pages.Mainpage;
 
 public class Rozetka extends BaseTest {

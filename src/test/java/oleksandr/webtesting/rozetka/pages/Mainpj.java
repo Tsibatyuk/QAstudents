@@ -1,9 +1,9 @@
 package oleksandr.webtesting.rozetka.pages;
 
-import abstractpages.BasePage;
 import driver.DriverPoll;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.BasePage;
 
 import java.security.cert.Extension;
 

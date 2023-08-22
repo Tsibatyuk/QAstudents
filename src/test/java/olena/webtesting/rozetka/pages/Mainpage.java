@@ -1,8 +1,8 @@
 package olena.webtesting.rozetka.pages;
 
-import abstractpages.BasePage;
 import driver.DriverPoll;
 import org.testng.Assert;
+import pages.BasePage;
 
 import java.security.cert.Extension;
 
