@@ -1,8 +1,8 @@
 package maksim.learning;
 
-import abstractpages.BaseTest;
 import org.asynchttpclient.netty.ws.NettyWebSocket;
 import org.testng.annotations.Test;
+import tests.BaseTest;
 
 import java.util.ArrayList;
 import java.util.List;

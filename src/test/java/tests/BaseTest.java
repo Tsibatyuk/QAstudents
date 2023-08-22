@@ -1,5 +1,6 @@
-package abstractpages;
+package tests;
 
+import abstractpages.Listener;
 import driver.Browser;
 import driver.DriverFactory;
 import driver.DriverPoll;
@@ -15,7 +16,8 @@ import java.util.ArrayList;
 
 
 @Listeners(Listener.class)
-abstract public class BaseTest {
+abstract public class BaseTest{
+
 
     @BeforeMethod
     public void setUpDriver() {

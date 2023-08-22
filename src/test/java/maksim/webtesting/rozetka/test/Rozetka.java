@@ -1,8 +1,8 @@
 package maksim.webtesting.rozetka.test;
 
-import abstractpages.BaseTest;
 import maksim.webtesting.rozetka.pages.Mainpage;
 import org.testng.annotations.Test;
+import tests.BaseTest;
 
 public class Rozetka extends BaseTest {
     @Test

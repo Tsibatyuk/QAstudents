@@ -1,8 +1,8 @@
 package olena.webtesting.rozetka.test;
 
-import abstractpages.BaseTest;
 import olena.webtesting.rozetka.pages.Mainpage;
 import org.testng.annotations.Test;
+import tests.BaseTest;
 
 
 public class Rozetka extends BaseTest {
