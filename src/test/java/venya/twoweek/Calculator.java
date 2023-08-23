@@ -22,12 +22,12 @@ public class Calculator {
             result = a - b;
         } else if (operation.equals("/")) {
             result = a / b;
+        } else if (operation.equals("0")) {
+            System.out.println("error");
+
         } else if (operation.equals("*")) {
             result = a * b;
-
-
         }
-
         System.out.println(" result : " + result);
 
         }

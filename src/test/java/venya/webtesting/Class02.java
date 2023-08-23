@@ -1,2 +1,4 @@
-package venya.webtesting.rozetka.pages;public class Class02 {
+package venya.webtesting;
+
+public class Class02 {
 }
