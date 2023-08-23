@@ -23,6 +23,7 @@ abstract public class BaseTest{
     public void setUpDriver() {
         WebDriver driver = DriverFactory.getDriver(Browser.CHROME);
         DriverPoll.setWebDriver(driver);
+        driver.manage().window().maximize();
         Config.setBaseUrl(PropertiesUtil.getProperty("url"));
     }
 

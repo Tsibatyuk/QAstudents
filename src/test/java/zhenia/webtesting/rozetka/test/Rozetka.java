@@ -10,7 +10,8 @@ public class Rozetka extends BaseTest {
     public void rozetkaTest(){
         Mainpage mp = new Mainpage();
         mp.openRozetka()
-                        .assertUrl();
+                .assertUrl()
+                .checkTheLanguge();
         sleep(4);
 
     }

@@ -19,7 +19,7 @@ abstract public class BasePage {
     private int BASE_WAIT = 5;
 
     public BasePage() {
-        wait = new WebDriverWait(DriverPoll.getDriver(), Duration.ofSeconds(15));
+        wait = new WebDriverWait(DriverPoll.getDriver(), Duration.ofSeconds(5));
         PageFactory.initElements(DriverPoll.getDriver(), this);
     }
 
