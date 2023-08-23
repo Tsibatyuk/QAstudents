@@ -9,12 +9,23 @@ public class Rozetka extends BaseTest {
     public void ukrainian (){
         Mainpage ukr = new Mainpage();
         ukr.openrozetka()
-        .assertUrl();
+        .assertUrl()
+                .ClickToMenubutton()
+                        .getTextfromList();
+        sleep(4);
         System.out.println("мова на сайті - українська");
 
 
+    }
+@Test
+    public void Experiment(){
+     Mainpage roz = new Mainpage();
+     roz.openrozetka()
+             .checkTheLanguge()
+//             .ClickToMenubutton()
+             .clicksport();
 
-
+sleep(15);
 
     }
 
