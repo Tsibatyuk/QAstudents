@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.BasePage;
 
+import javax.swing.*;
 import java.security.cert.Extension;
 import java.util.ArrayList;
 import java.util.List;
@@ -64,4 +65,46 @@ private WebElement sport;
 
         return this;
 
-    }}
+    }
+@FindBy(xpath = "//div[contains(@class,'animated')]//*[.='Ноутбуки та комп’ютери']")
+    private WebElement computer;
+    public Mainpage clikcomputer(){
+        click(computer);
+
+        return new Mainpage();
+    }
+
+ @FindBy(xpath = "//ul[@class='menu-categories ng-star-inserted']/li/a")
+ public List<WebElement> cycle;
+
+
+ public Mainpage clickCycleForDirectoryXpath(int y){
+        click(cycle.get(y));
+        return this;
+ }
+ public void clickCycle(int y){
+     click(cycle.get(y));
+ }
+
+    public Mainpage textCycleForDirectoryXpath(int i, List<String> u){
+        u.add(cycle.get(i).getText());
+        return this;
+    }
+    List<String> cycle2 = new ArrayList<>();
+
+
+
+    public  void forCycle(){
+        int nam = cycle.size();
+        for (int i = 0; i<nam;i++){
+            textCycleForDirectoryXpath(i,cycle2);
+            System.out.println(cycle2.get(i));
+//            System.out.println(cycle.get(i).getText());
+            clickCycle(i);
+            sleep(1);
+            DriverPoll.getDriver().navigate().back();
+            cliktomenubutton();
+        }
+    }
+
+}
