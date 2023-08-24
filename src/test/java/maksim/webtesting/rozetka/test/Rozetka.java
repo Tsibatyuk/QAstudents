@@ -9,10 +9,21 @@ public class Rozetka extends BaseTest {
 public void lanquagetest(){
     Mainpage mp = new Mainpage();
     mp.openrozetka()
-            .asserturl();
-        System.out.println("Мова UA");
-
-
+            .asserturl()
+            .clicbtn()
+            .listrrr();
+            sleep(3);
+    }
+    @Test
+public void frog(){
+        Mainpage forest = new Mainpage();
+        forest.openrozetka()
+                .checkTheLanguge()
+                .clicbtn()
+                .clksport();
+                sleep(4);
 
 }
+
+
 }
