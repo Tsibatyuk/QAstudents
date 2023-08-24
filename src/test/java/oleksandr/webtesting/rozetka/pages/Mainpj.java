@@ -52,7 +52,7 @@ public Mainpj assertUrl (){
     @FindBy(xpath = "//*[text()='Спорт і захоплення']" )
     List <WebElement> sport;
    public Mainpj clickspot(){
-       click(sport.get(0));
+       click(sport.get(0g));
 
 
        return this;
