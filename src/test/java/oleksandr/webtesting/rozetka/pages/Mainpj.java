@@ -69,5 +69,5 @@ public Mainpj assertUrl (){
         return this;
     }
 
-//    @FindBy(xpath = "//a[@class=\"menu-categories__link js-menu-categories__link menu-categories__link_state_hovered\"]\n")
+//   @FindBy(xpath = ""
 }
