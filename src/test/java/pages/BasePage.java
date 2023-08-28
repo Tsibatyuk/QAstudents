@@ -87,5 +87,8 @@ abstract public class BasePage {
     protected void setValue(WebElement element, String value) {
         wait.until(ExpectedConditions.elementToBeClickable(element)).sendKeys(value);
     }
+    public void goBack() {
+        DriverPoll.getDriver().navigate().back();
+    }
 
 }
