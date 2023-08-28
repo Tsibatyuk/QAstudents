@@ -10,7 +10,7 @@ public class Rozetka extends BaseTest {
     @Test
     public void uklanguage() {
         Mainpage uk = new Mainpage();
-        uk.openrozetka()
+        uk.openUrl("https://rozetka.com.ua/")
                 .assertUrl()
                 .cliktomenubutton()
                 .printUniqueProductNames();
@@ -18,34 +18,59 @@ public class Rozetka extends BaseTest {
 //        System.out.println("Ви обрали українську мову ");
 
     }
-@Test
+
+    @Test
     public void sport() {
-            Mainpage sp = new Mainpage();
-            sp.openrozetka()
-                    .assertUrl()
-                    .cliktomenubutton()
-                            .cliksport();
-    sleep(4);
+        Mainpage sp = new Mainpage();
+        sp.openUrl("https://rozetka.com.ua/")
+                .assertUrl()
+                .cliktomenubutton()
+                .cliksport();
+        sleep(4);
     }
 
- @Test
-    public void computer(){
+    @Test
+    public void computer() {
         Mainpage co = new Mainpage();
-        co.openrozetka()
+        co.openUrl("https://rozetka.com.ua/")
                 .assertUrl()
                 .cliktomenubutton()
                 .clikcomputer();
         sleep(8);
 
     }
-@Test
-    public void cycle(){
+
+    @Test
+    public void cycle() {
         Mainpage cy = new Mainpage();
-        cy.openrozetka();
-    cy.assertUrl();
-    cy.cliktomenubutton();
-    sleep(2);
-    cy.forCycle();
+
+        cy.openUrl("https://rozetka.com.ua/")
+                .assertUrl()
+                .cliktomenubutton()
+                .forCycle();
         sleep(5);
-}
+    }
+
+    @Test
+    public void menu(){
+        Mainpage me = new Mainpage();
+
+        me.openUrl("https://rozetka.com.ua/")
+                .assertUrl()
+                .clikMenu();
+
+    }
+    @Test
+    public void laptop(){
+        Mainpage la = new Mainpage();
+        la.openUrl("https://rozetka.com.ua/")
+                .assertUrl()
+                .cliktomenubutton()
+                .clikcomputer()
+                .laptop();
+
+
+
+    }
+
 }
