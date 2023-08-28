@@ -14,8 +14,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Mainpage extends BasePage {
-    public Mainpage openrozetka() {
-        DriverPoll.getDriver().get("https://rozetka.com.ua/");
+    public Mainpage openUrl(String siteUrl) {
+        DriverPoll.getDriver().get(siteUrl);
         return this;
 
 
@@ -24,6 +24,7 @@ public class Mainpage extends BasePage {
     private WebElement fatMenuBtn;
     public Mainpage cliktomenubutton(){
 click(fatMenuBtn);
+sleep(2);
         return this;
     }
 
@@ -102,9 +103,25 @@ private WebElement sport;
 //            System.out.println(cycle.get(i).getText());
             clickCycle(i);
             sleep(1);
-            DriverPoll.getDriver().navigate().back();
+            goBack();
             cliktomenubutton();
         }
     }
+
+    @FindBy(xpath = "//*[@class='header__button ng-tns-c59-1']")
+    private WebElement menu;
+    public Mainpage clikMenu(){
+        click(menu);
+        sleep(4);
+        return this;
+    }
+@FindBy(xpath = "//img[contains(@alt,'Ноутбуки')]")
+    private WebElement clikLaptop;
+    public Mainpage laptop(){
+        click(clikLaptop);
+        sleep(5);
+        return this;
+    }
+//@FindBy(xpath = "")
 
 }
