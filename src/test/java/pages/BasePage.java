@@ -3,6 +3,7 @@ package pages;
 import driver.DriverPoll;
 import lombok.SneakyThrows;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -89,6 +90,11 @@ abstract public class BasePage {
     }
     public void goBack() {
         DriverPoll.getDriver().navigate().back();
+    }
+
+    public void scroll(int pixels) {
+        JavascriptExecutor js = (JavascriptExecutor) DriverPoll.getDriver();
+        js.executeScript("window.scrollBy(0," + pixels + ")", "");
     }
 
 }

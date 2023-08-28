@@ -1,6 +1,7 @@
 package venya.webtesting.rozetka.pages.rozetka;
 
 import driver.DriverPoll;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.Extension;
 import org.openqa.selenium.support.FindBy;
@@ -92,6 +93,8 @@ public class Mainpage extends BasePage {
     private WebElement lap;
 
     public Mainpage laptopp() {
+        sleep(2);
+        scroll(400);
         click(lap);
         sleep(5);
         return this;
