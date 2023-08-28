@@ -54,24 +54,51 @@ public class Mainpage extends BasePage {
     }
 
     //*[.='Спорт і захоплення']    //*[contains(.,'Спорт і захоплення')]
-    @FindBy (xpath = "//*[text()='Спорт і захоплення']")
-     List<WebElement> sport;
+    @FindBy(xpath = "//*[text()='Спорт і захоплення']")
+    List<WebElement> sport;
 
-    public Mainpage clicksport (){
+    public Mainpage clicksport() {
         click(sport.get(0));
 
 
         return this;
     }
+
     @FindBy(xpath = "//li[@class='lang__item lang-header__item lang-header__item_state_active ng-star-inserted']")
     private WebElement ukrBtn;
-    public Mainpage checkTheLanguge(){
+
+    public Mainpage checkTheLanguge() {
         try {
             click(waitUntilElementToBeClickableByXpath(String.valueOf(ukrBtn)));
-        }catch(Exception e){
+        } catch (Exception e) {
             click(fatmenu);
         }
         return this;
     }
+
+
+    @FindBy(xpath = "//div[contains(@class,'animated')]//*[.='Ноутбуки та комп’ютери']")
+    private WebElement comp;
+
+    public Mainpage clickcomp() {
+
+        click(comp);
+        return new Mainpage();
+
+    }
+
+
+    @FindBy(xpath = "//img[contains(@alt,'Ноутбуки')]")
+    private WebElement lap;
+
+    public Mainpage laptopp() {
+        click(lap);
+        sleep(5);
+        return this;
+
+    }
+
+
+
 
 }
