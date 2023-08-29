@@ -20,11 +20,13 @@ public class Mainpage extends BasePage {
 
 
     }
+
     @FindBy(xpath = "//button[contains(@id,'fat-menu')]")
     private WebElement fatMenuBtn;
-    public Mainpage cliktomenubutton(){
-click(fatMenuBtn);
-sleep(2);
+
+    public Mainpage cliktomenubutton() {
+        click(fatMenuBtn);
+        sleep(2);
         return this;
     }
 
@@ -58,47 +60,52 @@ sleep(2);
 //        }
         return this;
     }
+
     //div[@class='menu-wrapper menu-wrapper_state_animated']//*[.='Спорт і захоплення']
     @FindBy(xpath = "//div[contains(@class,'animated')]//*[.='Спорт і захоплення']")
-private WebElement sport;
+    private WebElement sport;
+
     public Mainpage cliksport() {
         click(sport);
 
         return this;
 
     }
-@FindBy(xpath = "//div[contains(@class,'animated')]//*[.='Ноутбуки та комп’ютери']")
+
+    @FindBy(xpath = "//div[contains(@class,'animated')]//*[.='Ноутбуки та комп’ютери']")
     private WebElement computer;
-    public Mainpage clikcomputer(){
+
+    public Mainpage clikcomputer() {
         click(computer);
 
         return new Mainpage();
     }
 
- @FindBy(xpath = "//ul[@class='menu-categories ng-star-inserted']/li/a")
- public List<WebElement> cycle;
+    @FindBy(xpath = "//ul[@class='menu-categories ng-star-inserted']/li/a")
+    public List<WebElement> cycle;
 
 
- public Mainpage clickCycleForDirectoryXpath(int y){
+    public Mainpage clickCycleForDirectoryXpath(int y) {
         click(cycle.get(y));
         return this;
- }
- public void clickCycle(int y){
-     click(cycle.get(y));
- }
+    }
 
-    public Mainpage textCycleForDirectoryXpath(int i, List<String> u){
+    public void clickCycle(int y) {
+        click(cycle.get(y));
+    }
+
+    public Mainpage textCycleForDirectoryXpath(int i, List<String> u) {
         u.add(cycle.get(i).getText());
         return this;
     }
+
     List<String> cycle2 = new ArrayList<>();
 
 
-
-    public  void forCycle(){
+    public void forCycle() {
         int nam = cycle.size();
-        for (int i = 0; i<nam;i++){
-            textCycleForDirectoryXpath(i,cycle2);
+        for (int i = 0; i < nam; i++) {
+            textCycleForDirectoryXpath(i, cycle2);
             System.out.println(cycle2.get(i));
 //            System.out.println(cycle.get(i).getText());
             clickCycle(i);
@@ -110,18 +117,39 @@ private WebElement sport;
 
     @FindBy(xpath = "//*[@class='header__button ng-tns-c59-1']")
     private WebElement menu;
-    public Mainpage clikMenu(){
+
+    public Mainpage clikMenu() {
         click(menu);
         sleep(4);
         return this;
     }
-@FindBy(xpath = "//img[contains(@alt,'Ноутбуки')]")
+
+    @FindBy(xpath = "//img[contains(@alt,'Ноутбуки')]")
     private WebElement clikLaptop;
-    public Mainpage laptop(){
+
+    public Mainpage laptop() {
         click(clikLaptop);
         sleep(5);
         return this;
     }
-//@FindBy(xpath = "")
 
+    @FindBy(xpath = "//button[@class='header__button ng-star-inserted'][1]")
+    private WebElement clikLogin;
+
+    @FindBy(xpath = "//input[@id='auth_email']")
+    private WebElement usernameField;
+
+    @FindBy(xpath = "//input[@class='ng-untouched ng-pristine ng-invalid']")
+    private WebElement passwordField;
+
+    @FindBy(xpath ="//button[@class='button button--large button--green auth-modal__submit ng-star-inserted']" )
+    private WebElement twist;
+
+    public Mainpage clikLoginRozetka() {
+        click(clikLogin);
+        sleep(2);
+        checkThatFieldIsEmpty(usernameField);
+        checkThatFieldIsEmpty(passwordField);
+        return this;
+    }
 }
