@@ -18,6 +18,10 @@ public class Rozetka extends BaseTest {
 //        System.out.println("Ви обрали українську мову ");
 
     }
+    @Test
+    public void newGoogle(){
+        DriverPoll.getDriver().get("https://www.google.com");
+    }
 
     @Test
     public void sport() {
