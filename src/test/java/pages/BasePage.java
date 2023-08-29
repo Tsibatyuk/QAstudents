@@ -97,4 +97,10 @@ abstract public class BasePage {
         js.executeScript("window.scrollBy(0," + pixels + ")", "");
     }
 
+    public boolean checkThatFieldIsEmpty(WebElement element) {
+        String usernameValue = element.getAttribute("value");
+        System.out.println("Поле пусте");
+        return usernameValue.isEmpty();
+    }
+
 }

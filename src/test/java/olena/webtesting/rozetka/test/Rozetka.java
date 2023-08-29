@@ -73,6 +73,13 @@ public class Rozetka extends BaseTest {
                 .clikcomputer()
                 .laptop();
 
+    }
+    @Test
+    public void login(){
+        Mainpage lo =new Mainpage();
+        lo.openUrl("https://rozetka.com.ua/")
+                .assertUrl()
+                .clikLoginRozetka();
 
 
     }
