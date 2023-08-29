@@ -6,24 +6,25 @@ import tests.BaseTest;
 
 public class Rozetka extends BaseTest {
     @Test
-public void lanquagetest(){
-    Mainpage mp = new Mainpage();
-    mp.openrozetka()
-            .asserturl()
-            .clicbtn()
-            .listrrr();
-            sleep(3);
+    public void lanquagetest() {
+        Mainpage mp = new Mainpage();
+        mp.openrozetka()
+                .asserturl()
+                .clicbtn()
+                .listrrr();
+        sleep(3);
     }
+
     @Test
-public void frog(){
+    public void frog() {
         Mainpage forest = new Mainpage();
         forest.openrozetka()
                 .checkTheLanguge()
                 .clicbtn()
                 .clksport();
-                sleep(4);
+        sleep(4);
 
-}
+    }
 
 
 }
