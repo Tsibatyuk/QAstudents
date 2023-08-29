@@ -143,13 +143,23 @@ public class Mainpage extends BasePage {
     private WebElement passwordField;
 
     @FindBy(xpath ="//button[@class='button button--large button--green auth-modal__submit ng-star-inserted']" )
-    private WebElement twist;
+    private WebElement enterButton;
 
     public Mainpage clikLoginRozetka() {
+
         click(clikLogin);
-        sleep(2);
+        sleep(1);
+//        usernameField.sendKeys("рпарп");
+        passwordField.click();
+        sleep(3);
         checkThatFieldIsEmpty(usernameField);
         checkThatFieldIsEmpty(passwordField);
         return this;
     }
+    public Mainpage desolateField(){
+
+
+        return this;
+    }
+
 }

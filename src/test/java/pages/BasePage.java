@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -99,7 +100,8 @@ abstract public class BasePage {
 
     public boolean checkThatFieldIsEmpty(WebElement element) {
         String usernameValue = element.getAttribute("value");
-        System.out.println("Поле пусте");
+        Assert.assertTrue(usernameValue.isEmpty(), "not empty");
+        System.out.println("Pole pyste shluha");
         return usernameValue.isEmpty();
     }
 
