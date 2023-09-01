@@ -18,7 +18,6 @@ public class Mainpage extends BasePage {
     public Mainpage openrozetka() {
         DriverPoll.getDriver().get("https://rozetka.com.ua");
 
-
         return this;
     }
 
