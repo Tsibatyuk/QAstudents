@@ -25,7 +25,6 @@ public class Rozetka extends BaseTest {
                 .ClickToMenubutton();
 
 
-
     }
 
     @Test
@@ -36,7 +35,6 @@ public class Rozetka extends BaseTest {
                 .ClickToMenubutton()
                 .clickcomp()
                 .laptopp();
-
 
 
     }
