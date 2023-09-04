@@ -1,7 +1,6 @@
 package maksim.webtesting.rozetka.pages;
 
 import driver.DriverPoll;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
@@ -81,6 +80,50 @@ public class Mainpage extends BasePage {
         return this;
     }
 
+    @FindBy(xpath = "//*[@href='#icon-user-simple']")
+
+    private WebElement rz;
+
+    public Mainpage log() {
+        click(rz);
+        return this;
+
+    }
+
+    @FindBy(xpath = "//*[@id='auth_email']")
+    private WebElement email;
+    @FindBy(xpath = "//*[@id='auth_pass']")
+    private WebElement password;
+
+    public Mainpage emptyfield(){
+        checkThatFieldIsEmpty(email);
+        checkThatFieldIsEmpty(password);
+        return this;
+    }
+    String validEmail = "fisher481516@gmail.com";
+    String inValidEmail = "fishejfcdgdx6@gmail.com";
+    String validPassword = "1234567Nika";
+    String inValidPassword = "12zdfmngaiubtika";
+
+    @FindBy(xpath = "//*[@class='button button--large button--green auth-modal__submit ng-star-inserted']")
+    private WebElement sendBtn;
+public Mainpage reestr() {
+    click(email);
+    email.sendKeys(validEmail);
+    click(password);
+    password.sendKeys();
+    click(sendBtn);
+    return this;
 
 }
+@FindBy(xpath = "//div[@class='recaptcha-checkbox-border']")
+    private WebElement bot;
+public Mainpage notbot(){
+    sleep(2);
+    click(bot);
+    return this;
+}
 
+
+
+}

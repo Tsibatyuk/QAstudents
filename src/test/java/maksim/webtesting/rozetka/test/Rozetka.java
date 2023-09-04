@@ -26,5 +26,15 @@ public class Rozetka extends BaseTest {
 
     }
 
+    @Test
+    public void login() {
+        Mainpage zr = new Mainpage();
+        zr.openrozetka()
+                .log()
+                .emptyfield()
+                .reestr()
+                .notbot();
+        sleep(4);
+    }
 
 }
