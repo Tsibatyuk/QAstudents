@@ -80,6 +80,15 @@ public class Rozetka extends BaseTest {
         lo.openUrl("https://rozetka.com.ua/")
                 .assertUrl()
                 .clikLoginRozetka();
+    }
+    @Test
+    public void login1(){
+        Mainpage lo1 =new Mainpage();
+        lo1.openUrl("https://rozetka.com.ua/")
+                .assertUrl()
+                .desolateField()
+                .enterButtonLogin();
+                //.notRobotLogin();
 
 
     }

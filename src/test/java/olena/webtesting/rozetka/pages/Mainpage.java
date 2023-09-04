@@ -133,7 +133,7 @@ public class Mainpage extends BasePage {
         return this;
     }
 
-    @FindBy(xpath = "//button[@class='header__button ng-star-inserted'][1]")
+    @FindBy(xpath = "(//button[@class='header__button ng-star-inserted'])[1]")
     private WebElement clikLogin;
 
     @FindBy(xpath = "//input[@id='auth_email']")
@@ -144,6 +144,21 @@ public class Mainpage extends BasePage {
 
     @FindBy(xpath ="//button[@class='button button--large button--green auth-modal__submit ng-star-inserted']" )
     private WebElement enterButton;
+
+    public Mainpage enterButtonLogin(){
+        click(enterButton);
+        sleep(6);
+        return this;
+    }
+
+    @FindBy(xpath = "//div[@class='recaptcha-checkbox-borderAnimation']")
+    private WebElement notRobot;
+
+    public Mainpage notRobotLogin(){
+        click(notRobot);
+        sleep(5);
+        return this;
+    }
 
     public Mainpage clikLoginRozetka() {
 
@@ -157,6 +172,14 @@ public class Mainpage extends BasePage {
         return this;
     }
     public Mainpage desolateField(){
+        click(clikLogin);
+        sleep(1);
+        usernameField.sendKeys("+380939816044");
+        click(passwordField);
+        passwordField.sendKeys("Qwerty777");
+
+
+        sleep(3);
 
 
         return this;
