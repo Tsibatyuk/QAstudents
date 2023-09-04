@@ -57,19 +57,19 @@ abstract public class BasePage {
     }
 
     @SneakyThrows
-    public void waitTillCircleLoaderDisappear(String locator) {
+    public void waitTillCircleLoaderDisappear(String locator) throws InterruptedException {
         waitUntilElementToBeInvisibilityByXpath(locator);
         Thread.sleep(100);
     }
 
     @SneakyThrows
-    public void waitTillVehicleLoaderDisappear(String locator) {
+    public void waitTillVehicleLoaderDisappear(String locator) throws InterruptedException {
         waitUntilElementToBeInvisibilityByXpath(locator);
         Thread.sleep(100);
     }
 
     @SneakyThrows
-    public void waitTillButtonLoaderDisappear(String locator) {
+    public void waitTillButtonLoaderDisappear(String locator) throws InterruptedException {
         waitUntilElementToBeInvisibilityByXpath(locator);
         Thread.sleep(100);
     }
