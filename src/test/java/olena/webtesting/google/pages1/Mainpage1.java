@@ -43,7 +43,7 @@ public class Mainpage1 extends BasePage {
         return Integer.parseInt(temperatureText);
     }
 
-    public void displayWeatherOnGoogle() {
+    public Mainpage1 displayWeatherOnGoogle() {
         int currentTemperature = getCurrentTemperature();
 
         if (currentTemperature > 20) {
@@ -53,6 +53,7 @@ public class Mainpage1 extends BasePage {
         } else {
             System.out.println("Холодно");
         }
+        return this;
     }
 
 }

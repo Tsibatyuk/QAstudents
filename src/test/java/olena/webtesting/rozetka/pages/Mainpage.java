@@ -123,13 +123,32 @@ public class Mainpage extends BasePage {
         sleep(4);
         return this;
     }
+@FindBy(xpath = "//div[@data-goods-id='391643262'][@class='goods-tile__inner']")
+private WebElement thisLaptop;
 
+    @FindBy(xpath = "//p[@class='product-price__big product-price__big-color-red']")
+    private  WebElement price;
     @FindBy(xpath = "//img[contains(@alt,'Ноутбуки')]")
     private WebElement clikLaptop;
 
     public Mainpage laptop() {
         click(clikLaptop);
         sleep(5);
+        scroll(800);
+        sleep(2);
+        click(thisLaptop);
+        sleep(2);
+        String priceText = price.getText();
+
+        // Видаляємо з тексту всі символи, окрім цифр та крапки (якщо вона є).
+        String cleanedPriceText = priceText.replaceAll("[^0-9.]", "");
+
+        // Перетворюємо текст у числовий формат.
+        double numericPrice = Double.parseDouble(cleanedPriceText);
+
+        // Виводимо цю ціну в термінал.
+        System.out.println("Ціна товару: " + numericPrice);
+
         return this;
     }
 

@@ -68,6 +68,7 @@ public class Rozetka extends BaseTest {
                 .clikcomputer()
                 .laptop();
 
+
     }
     @Test
     public void login(){
