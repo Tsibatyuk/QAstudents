@@ -4,16 +4,16 @@ import driver.DriverPoll;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 import pages.BasePage;
 
-import javax.swing.*;
-import java.security.cert.Extension;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Mainpage extends BasePage {
+
     public Mainpage openUrl(String siteUrl) {
         DriverPoll.getDriver().get(siteUrl);
         return this;
@@ -185,4 +185,41 @@ public class Mainpage extends BasePage {
         return this;
     }
 
+    public Mainpage webElement() {
+        List<String> listSectoins = listmenucategories.stream()
+        .map(WebElement::getText)
+        .collect(Collectors.toList());
+
+        for (String str : listSectoins) {
+            List<Character> characters = str.chars()
+                    .mapToObj(c ->(char) c )
+                    .collect(Collectors.toList());
+            characters.addAll(characters);
+
+            Set<Character> uniqueSet = new HashSet<>(characters);
+
+            for (Character character : uniqueSet) {
+                System.out.println(character);
+            }
+        }
+        return this;
+    }
+
+    public Mainpage qqq(){
+        List<String> ysrisy = listmenucategories.stream()
+                .map(WebElement::getText)
+                .collect(Collectors.toList());
+        for (String qwe : ysrisy) {
+        List<Character> characters = qwe.chars()
+                .mapToObj(c->(char)c)
+                .collect(Collectors.toList());
+        characters.addAll(characters);
+        Set<Character> www = new HashSet<>(characters);
+        for (Character character : www){
+            System.out.println(character);
+        }
+        }
+
+        return this;
+    }
 }
