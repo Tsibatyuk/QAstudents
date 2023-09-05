@@ -36,5 +36,10 @@ public class Rozetka extends BaseTest {
                 .notbot();
         sleep(4);
     }
-
+    @Test
+    public void listWebElements(){
+        Mainpage lst = new Mainpage();
+        lst.openrozetka()
+                .webElement();
+    }
 }
