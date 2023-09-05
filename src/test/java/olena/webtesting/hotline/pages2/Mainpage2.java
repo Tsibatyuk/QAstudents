@@ -1,14 +1,13 @@
-package olena.hotline.pages2;
+package olena.webtesting.hotline.pages2;
 
 import driver.DriverPoll;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.annotations.Test;
 import pages.BasePage;
 
 
 public class Mainpage2 extends BasePage {
+
     public Mainpage2 openHotline(){
         DriverPoll.getDriver().get("https://hotline.ua/");
         sleep(2);

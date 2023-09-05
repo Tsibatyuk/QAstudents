@@ -1,6 +1,6 @@
-package olena.hotline.test;
+package olena.webtesting.hotline.test;
 
-import olena.hotline.pages2.Mainpage2;
+import olena.webtesting.hotline.pages2.Mainpage2;
 import org.testng.annotations.Test;
 import tests.BaseTest;
 

@@ -1,10 +1,7 @@
-package olena.google.test;
+package olena.webtesting.google.test;
 
-import driver.DriverPoll;
-import olena.google.pages1.Mainpage1;
-import olena.webtesting.rozetka.pages.Mainpage;
+import olena.webtesting.google.pages1.Mainpage1;
 import org.testng.annotations.Test;
-import pages.BasePage;
 import tests.BaseTest;
 
 public class Google extends BaseTest {
@@ -14,7 +11,8 @@ public class Google extends BaseTest {
         Mainpage1 se = new Mainpage1();
         se.openGoogle()
                 .writeInGoogle()
-                .enterSearch();
+                .enterSearch()
+                .displayWeatherOnGoogle();
 
     }
 }
