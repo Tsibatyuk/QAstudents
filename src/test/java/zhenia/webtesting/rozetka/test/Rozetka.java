@@ -11,7 +11,8 @@ public class Rozetka extends BaseTest {
         Mainpage mp = new Mainpage();
         mp.openRozetka()
                 .assertUrl()
-                .checkTheLanguge();
+                .checkTheLanguge()
+                .getTextFromList();
         sleep(4);
 
     }
