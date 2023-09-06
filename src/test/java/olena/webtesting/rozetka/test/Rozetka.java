@@ -77,13 +77,12 @@ public class Rozetka extends BaseTest {
                 .clikLoginRozetka();
     }
     @Test
-    public void login1(){
-        Mainpage lo1 =new Mainpage();
+    public void login1() {
+        Mainpage lo1 = new Mainpage();
         lo1.openUrl("https://rozetka.com.ua/")
                 .desolateField()
                 .enterButtonLogin();
-                //.notRobotLogin();
-
+        //.notRobotLogin();
 
     }
     @Test
@@ -92,4 +91,15 @@ public class Rozetka extends BaseTest {
         liS.openUrl("https://rozetka.com.ua/")
                 .webElement();
 }
+    @Test
+    public void filtr() {
+        Mainpage la = new Mainpage();
+        la.openUrl("https://rozetka.com.ua/")
+                .cliktomenubutton()
+                .clikcomputer()
+                .filterLoptop1();
+
+
+
+    }
 }

@@ -1,6 +1,7 @@
 package olena.webtesting.rozetka.pages;
 
 import driver.DriverPoll;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
@@ -130,6 +131,36 @@ private WebElement thisLaptop;
     private  WebElement price;
     @FindBy(xpath = "//img[contains(@alt,'Ноутбуки')]")
     private WebElement clikLaptop;
+
+    @FindBy(xpath = "//a[@data-id='Apple']")
+    private WebElement filter;
+
+
+ public  Mainpage laptopApple(){
+     click(clikLaptop);
+     sleep(2);
+     filter.click();
+     sleep(10);
+     return this;
+ }
+
+    @FindBy(xpath = "//a[@class='checkbox-filter__link']")
+    private List<WebElement> filterLoptop;
+
+ public Mainpage filterLoptop1(){
+     click(clikLaptop);
+     System.out.println(filterLoptop.get(1).getText());
+     List<String> filtr = filterLoptop.stream()
+             .map(WebElement::getText) // Use getText() method to extract text
+             .collect(Collectors.toList());
+     filtr.forEach(System.out::println);
+
+     return this;
+ }
+
+
+
+
 
     public Mainpage laptop() {
         click(clikLaptop);
