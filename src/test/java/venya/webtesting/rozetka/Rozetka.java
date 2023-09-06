@@ -32,10 +32,13 @@ public class Rozetka extends BaseTest {
         Mainpage mp = new Mainpage();
         mp.openrozetka()
                 .assertUrl()
-                .ClickToMenubutton()
-                .clickcomp()
-                .laptopp();
+                .ClickToMenubutton();
+    }
 
-
+    @Test
+    public void Newmethod(){
+        Mainpage mmp =new Mainpage();
+        mmp.openrozetka()
+                .getTextfromList();
     }
 }

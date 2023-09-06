@@ -6,13 +6,25 @@ import venya.google.Page.Googlepage;
 
 public class Googletest extends BaseTest {
     @Test
-    public void search() {
+    public void searchh() {
         Googlepage sea = new Googlepage();
         sea.openGo()
                 .writeinGo()
                 .entersearchGo()
                 .Googlesite()
-                .Weatheroption();
+                .videos()
+                .nextbutton()
+                .previouspage();
+
+    }
+
+    @Test
+    public void weatherrr(){
+        Googlepage  sea = new Googlepage();
+        sea.openGo()
+                .entersearchGo()
+                .Googlesite();
 
     }
 }
+

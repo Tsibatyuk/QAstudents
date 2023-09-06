@@ -10,8 +10,7 @@ import org.testng.annotations.Test;
 import org.testng.reporters.jq.Main;
 import pages.BasePage;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Mainpage extends BasePage {
@@ -47,60 +46,33 @@ public class Mainpage extends BasePage {
                 .distinct()
                 .collect(Collectors.toList());
 
-        for (String productName : uniqueProductNames) {
-            System.out.println(productName);
+            for (String str : uniqueProductNames) {
+                List<Character> characters = str.chars() // Перетворюємо рядок у IntStream
+                        .mapToObj(c -> (char) c) // Перетворюємо IntStream у Stream<Character>
+                        .collect(Collectors.toList()); // Збираємо символи в список
+                characters.addAll(characters); // Додаємо символи до загального списку
+
+                // Використовуємо Set для видалення дублікатів
+                Set<Character> uniqueSet = new HashSet<>(characters);
+
+                // Виводимо унікальні символи
+                for (Character character : uniqueSet) {
+                    System.out.println(character);
+                }
+            }
+            return this;
         }
-        return this;
-    }
-
-    //*[.='Спорт і захоплення']    //*[contains(.,'Спорт і захоплення')]
-    @FindBy(xpath = "//*[text()='Спорт і захоплення']")
-    List<WebElement> sport;
-
-    public Mainpage clicksport() {
-        click(sport.get(0));
 
 
-        return this;
-    }
-
-    @FindBy(xpath = "//li[@class='lang__item lang-header__item lang-header__item_state_active ng-star-inserted']")
-    private WebElement ukrBtn;
-
-    public Mainpage checkTheLanguge() {
-        try {
-            click(waitUntilElementToBeClickableByXpath(String.valueOf(ukrBtn)));
-        } catch (Exception e) {
-            click(fatmenu);
-        }
-        return this;
-    }
-
-
-    @FindBy(xpath = "//div[contains(@class,'animated')]//*[.='Ноутбуки та комп’ютери']")
-    private WebElement comp;
-
-    public Mainpage clickcomp() {
-
-        click(comp);
-        return new Mainpage();
-
-    }
-
-
-    @FindBy(xpath = "//img[contains(@alt,'Ноутбуки')]")
-    private WebElement lap;
-
-    public Mainpage laptopp() {
-        sleep(2);
-        scroll(400);
-        click(lap);
-        sleep(5);
-        return this;
 
     }
 
 
 
 
-}
+
+
+
+
+
+

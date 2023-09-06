@@ -2,10 +2,13 @@ package venya.google.Page;
 
 import driver.DriverPoll;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
 import venya.webtesting.rozetka.pages.rozetka.Mainpage;
+
+import java.sql.Driver;
 
 public class Googlepage extends BasePage {
     public Googlepage openGo() {
@@ -27,7 +30,8 @@ public class Googlepage extends BasePage {
 
     @FindBy(xpath = "//div[@class='FPdoLc lJ9FBc']//input[@class='gNO89b']")
     private WebElement enterGo;
-    public Googlepage entersearchGo(){
+
+    public Googlepage entersearchGo() {
         click(enterGo);
         sleep(3);
         return this;
@@ -36,22 +40,45 @@ public class Googlepage extends BasePage {
     @FindBy(xpath = "//div[@class = 'CCgQ5 vCa9Yd QfkTvb N8QANc MUxGbd v0nnCb']")
     private WebElement siteGo;
 
-    public Googlepage Googlesite(){
+    public Googlepage Googlesite() {
         scroll(500);
         DriverPoll.getDriver().get("https://weather.com/weather/tenday/l/Miami+FL?canonicalCityId=c9d07351a6bbc498786bf52814f07b68fe43a40bfd634facef3db6b459321c41");
-        sleep(3);
+        scroll(1400);
+        sleep(10);
         return this;
     }
 
-    @FindBy(xpath = "//*[@class = 'Button--default--2gfm1 MainMenu--menuButton--z3Qtu']")
-    private WebElement weather;
+    @FindBy(xpath = "//a[@class ='Footer--cmCtaButton--190d8 mediaCtaButton Button--primary--1eZwN']")
+    private WebElement category;
 
-    public Googlepage Weatheroption() {
-        click(weather);
-        sleep(3);
+    public Googlepage videos() {
+        click(category);
+        scroll(1400);
+        sleep(2);
+        return this;
+    }
+
+    @FindBy(xpath = "//a[@class ='Pagination--nextButton--3L5q9 Pagination--button--2Gb0n Button--default--2gfm1']")
+    private WebElement next;
+
+    public Googlepage nextbutton() {
+        click(next);
+        sleep(2);
+        return this;
+    }
+
+    public Googlepage previouspage() {
+        DriverPoll.getDriver().get(" https://weather.com/accessibility-statement");
+        sleep(2);
         return this;
 
     }
-
 
 }
+
+
+
+
+
+
+
