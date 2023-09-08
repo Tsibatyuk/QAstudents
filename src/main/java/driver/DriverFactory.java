@@ -14,7 +14,7 @@ public class DriverFactory {
         switch (browser) {
             case CHROME:
                 WebDriverManager.safaridriver().setup();
-                return new SafariDriver();
+                return new ChromeDriver();
             case FIREFOX:
                 WebDriverManager.firefoxdriver().setup();
                 return new FirefoxDriver();
