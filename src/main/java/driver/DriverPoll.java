@@ -8,6 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class DriverPoll {
 
     private static final Map<Long, WebDriver> WEB_DRIVER_MAP = new ConcurrentHashMap<>();
+    private static WebDriver driver;
 
     public static void setWebDriver(WebDriver driver) {
         WEB_DRIVER_MAP.put(Thread.currentThread().getId(), driver);
