@@ -18,8 +18,9 @@ public class Rozetka extends BaseTest {
 //        System.out.println("Ви обрали українську мову ");
 
     }
+
     @Test
-    public void newGoogle(){
+    public void newGoogle() {
         DriverPoll.getDriver().get("https://www.google.com");
     }
 
@@ -53,15 +54,16 @@ public class Rozetka extends BaseTest {
     }
 
     @Test
-    public void menu(){
+    public void menu() {
         Mainpage me = new Mainpage();
 
         me.openUrl("https://rozetka.com.ua/")
                 .clikMenu();
 
     }
+
     @Test
-    public void laptop(){
+    public void laptop() {
         Mainpage la = new Mainpage();
         la.openUrl("https://rozetka.com.ua/")
                 .cliktomenubutton()
@@ -70,12 +72,14 @@ public class Rozetka extends BaseTest {
 
 
     }
+
     @Test
-    public void login(){
-        Mainpage lo =new Mainpage();
+    public void login() {
+        Mainpage lo = new Mainpage();
         lo.openUrl("https://rozetka.com.ua/")
                 .clikLoginRozetka();
     }
+
     @Test
     public void login1() {
         Mainpage lo1 = new Mainpage();
@@ -85,12 +89,14 @@ public class Rozetka extends BaseTest {
         //.notRobotLogin();
 
     }
+
     @Test
-    public void listSet(){
+    public void listSet() {
         Mainpage liS = new Mainpage();
         liS.openUrl("https://rozetka.com.ua/")
                 .webElement();
-}
+    }
+
     @Test
     public void filtr() {
         Mainpage la = new Mainpage();
@@ -99,7 +105,13 @@ public class Rozetka extends BaseTest {
                 .clikcomputer()
                 .filterLoptop1();
 
+    }
 
-
+    @Test
+    public void garden(){
+        Mainpage ga =new Mainpage();
+        ga.openUrl("https://rozetka.com.ua/")
+                .cliktomenubutton()
+                .rozetkaGarden();
     }
 }
