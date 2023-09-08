@@ -1,9 +1,21 @@
 package olena.webtesting.hotline.pages2;
 
+import driver.Browser;
+import driver.DriverFactory;
 import driver.DriverPoll;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 import pages.BasePage;
+import tests.BaseTest;
+import utiles.Config;
+import utiles.PropertiesUtil;
+
+import javax.print.DocFlavor;
 
 
 public class Mainpage2 extends BasePage {
@@ -52,8 +64,5 @@ public class Mainpage2 extends BasePage {
 
         return this;
     }
-
-
-
 
 }

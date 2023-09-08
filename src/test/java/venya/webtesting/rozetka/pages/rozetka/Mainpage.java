@@ -9,9 +9,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.reporters.jq.Main;
 import pages.BasePage;
+import tests.BaseTest;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -129,6 +131,13 @@ double newprice  = Double.parseDouble(cleanedTextprice);
 //        }
 //
 
+    public static class Test3 extends BaseTest{
+
+
+
+
+
+    }
 
     }
 
