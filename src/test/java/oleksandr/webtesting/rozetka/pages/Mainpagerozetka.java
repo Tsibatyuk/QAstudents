@@ -1,19 +1,19 @@
 package oleksandr.webtesting.rozetka.pages;
 
+import driver.DriverPoll;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
+import pages.BasePage;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import org.openqa.selenium.WebElement;
-import driver.DriverPoll;
-import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
-import pages.BasePage;
-
 public class Mainpagerozetka extends BasePage {
-
 
     String url = "https://rozetka.com.ua";
 
@@ -34,7 +34,6 @@ public class Mainpagerozetka extends BasePage {
         Assert.assertEquals(DriverPoll.getDriver().getCurrentUrl(), "https://rozetka.com.ua/ua/");
         return this;
     }
-
 
     @FindBy(xpath = "//li[contains(@class,'menu-categories__item ng-star-inserted')]")
     List<WebElement> katalog;
@@ -112,7 +111,41 @@ public  Mainpagerozetka  selectlatters() {
     @FindBy(id = "auth_pass")
     private WebElement passwordfild;
 
+@FindBy(xpath = "//a[@class='menu-categories__link js-menu-categories__link menu-categories__link_state_hovered']")
+    private  WebElement newnout;
+public Mainpagerozetka exitNotbook(){
+    click(newnout);
+    return  this;
+
+}
 
 
+// ...
+
+    @FindBy(xpath = "//a[@class='menu-categories__link js-menu-categories__link menu-categories__link_state_hovered']")
+    private WebElement newnout2;
+
+    public Mainpagerozetka exitNotbook1() {
+        for (int i = 0; i < 10; i++) {
+            try{ click(newnout2);
+                break;
+            }catch(Exception e){
+                scroll(500);
+            }
+
+        }
+
+        return this;
     }
+
+
+    // Метод для кліку на елементі
+    public void click(WebElement element) {
+        element.click();
+    }
+
+}
+
+
+
 

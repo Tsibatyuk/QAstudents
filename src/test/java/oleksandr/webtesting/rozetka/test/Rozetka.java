@@ -3,6 +3,7 @@ package oleksandr.webtesting.rozetka.test;
 import oleksandr.webtesting.rozetka.pages.Mainpagerozetka;
 import org.testng.annotations.Test;
 import tests.BaseTest;
+import org.openqa.selenium.JavascriptExecutor;
 import java.util.Set;
 
 public class Rozetka extends BaseTest {
@@ -37,7 +38,15 @@ sleep(2);
 
     }
 
+@Test
+    public  void  Newdevaice(){
+        Mainpagerozetka nout = new Mainpagerozetka();
+        nout.openrozetka()
+                .klaztomenuBaton()
+                        .exitNotbook()
+                                .exitNotbook1();
 
+}
 }
 
 

@@ -9,7 +9,9 @@ public class TestWeather  extends BaseTest {
         PagesWeather wt24 = new PagesWeather();
         wt24.openGoogle()
                 .strikaGoogle()
-        .enterSerch();
+        .enterSerch()
+                .sinoptik()
+                .todaysweather();
 
     }
 
