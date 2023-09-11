@@ -9,8 +9,10 @@ import org.testng.annotations.Test;
 import tests.BaseTest;
 
 public class Hotline extends BaseTest {
-    @Test
-    public void testHotline() {
+
+@Test
+    public void testHotline (){
+
         Mainpage2 te = new Mainpage2();
         te.openHotline()
                 .goodLoginHotline()
