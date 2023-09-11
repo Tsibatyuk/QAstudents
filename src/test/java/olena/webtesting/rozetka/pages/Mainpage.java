@@ -1,6 +1,7 @@
 package olena.webtesting.rozetka.pages;
 
 import driver.DriverPoll;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
@@ -123,13 +124,40 @@ public class Mainpage extends BasePage {
         sleep(4);
         return this;
     }
-@FindBy(xpath = "//div[@data-goods-id='391643262'][@class='goods-tile__inner']")
-private WebElement thisLaptop;
+
+    @FindBy(xpath = "//div[@data-goods-id='391643262'][@class='goods-tile__inner']")
+    private WebElement thisLaptop;
 
     @FindBy(xpath = "//p[@class='product-price__big product-price__big-color-red']")
-    private  WebElement price;
+    private WebElement price;
     @FindBy(xpath = "//img[contains(@alt,'Ноутбуки')]")
     private WebElement clikLaptop;
+
+    @FindBy(xpath = "//a[@data-id='Apple']")
+    private WebElement filter;
+
+
+    public Mainpage laptopApple() {
+        click(clikLaptop);
+        sleep(2);
+        filter.click();
+        sleep(10);
+        return this;
+    }
+
+    @FindBy(xpath = "//a[@class='checkbox-filter__link']")
+    private List<WebElement> filterLoptop;
+
+    public Mainpage filterLoptop1() {
+        click(clikLaptop);
+        System.out.println(filterLoptop.get(1).getText());
+        List<String> filtr = filterLoptop.stream()
+                .map(WebElement::getText) // Use getText() method to extract text
+                .collect(Collectors.toList());
+        filtr.forEach(System.out::println);
+
+        return this;
+    }
 
     public Mainpage laptop() {
         click(clikLaptop);
@@ -161,10 +189,10 @@ private WebElement thisLaptop;
     @FindBy(xpath = "//input[@class='ng-untouched ng-pristine ng-invalid']")
     private WebElement passwordField;
 
-    @FindBy(xpath ="//button[@class='button button--large button--green auth-modal__submit ng-star-inserted']" )
+    @FindBy(xpath = "//button[@class='button button--large button--green auth-modal__submit ng-star-inserted']")
     private WebElement enterButton;
 
-    public Mainpage enterButtonLogin(){
+    public Mainpage enterButtonLogin() {
         click(enterButton);
         sleep(6);
         return this;
@@ -173,7 +201,7 @@ private WebElement thisLaptop;
     @FindBy(xpath = "//div[@class='recaptcha-checkbox-borderAnimation']")
     private WebElement notRobot;
 
-    public Mainpage notRobotLogin(){
+    public Mainpage notRobotLogin() {
         click(notRobot);
         sleep(5);
         return this;
@@ -190,7 +218,8 @@ private WebElement thisLaptop;
         checkThatFieldIsEmpty(passwordField);
         return this;
     }
-    public Mainpage desolateField(){
+
+    public Mainpage desolateField() {
         click(clikLogin);
         sleep(1);
         usernameField.sendKeys("+380939816044");
@@ -206,12 +235,12 @@ private WebElement thisLaptop;
 
     public Mainpage webElement() {
         List<String> listSectoins = listmenucategories.stream()
-        .map(WebElement::getText)
-        .collect(Collectors.toList());
+                .map(WebElement::getText)
+                .collect(Collectors.toList());
 
         for (String str : listSectoins) {
             List<Character> characters = str.chars()
-                    .mapToObj(c ->(char) c )
+                    .mapToObj(c -> (char) c)
                     .collect(Collectors.toList());
             characters.addAll(characters);
 
@@ -224,21 +253,40 @@ private WebElement thisLaptop;
         return this;
     }
 
-    public Mainpage qqq(){
+    public Mainpage qqq() {
         List<String> ysrisy = listmenucategories.stream()
                 .map(WebElement::getText)
                 .collect(Collectors.toList());
         for (String qwe : ysrisy) {
-        List<Character> characters = qwe.chars()
-                .mapToObj(c->(char)c)
-                .collect(Collectors.toList());
-        characters.addAll(characters);
-        Set<Character> www = new HashSet<>(characters);
-        for (Character character : www){
-            System.out.println(character);
-        }
+            List<Character> characters = qwe.chars()
+                    .mapToObj(c -> (char) c)
+                    .collect(Collectors.toList());
+            characters.addAll(characters);
+            Set<Character> www = new HashSet<>(characters);
+            for (Character character : www) {
+                System.out.println(character);
+            }
         }
 
         return this;
     }
+
+    @FindBy(xpath = "//a[@ class='menu-categories__link js-menu-categories__link']")
+    private List<WebElement> openGarden;
+
+    @FindBy(xpath = "//a[@ class='tile-cats__heading ng-star-inserted']")
+    private List<WebElement> catalogGarden;
+    public Mainpage rozetkaGarden() {
+        click(openGarden.get(6));
+        sleep(3);
+        scroll(800);
+        System.out.println(catalogGarden.get(1).getText());
+        List<String> garden = catalogGarden.stream()
+                .map(WebElement::getText)
+                .collect(Collectors.toList());
+        garden.forEach(System.out::println);
+
+        return this;
+    }
+
 }

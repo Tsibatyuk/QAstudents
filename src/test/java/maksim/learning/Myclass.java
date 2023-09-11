@@ -1,6 +1,5 @@
 package maksim.learning;
 
-import org.asynchttpclient.netty.ws.NettyWebSocket;
 import org.testng.annotations.Test;
 import tests.BaseTest;
 
@@ -25,24 +24,29 @@ public class Myclass extends BaseTest {
 
             System.out.println(i);
         }
-    }@Test
+    }
+
+    @Test
     public void nn() {
         List<Integer> str = new ArrayList<>();
-        for (int i = 0; i <=10; i++) {
-            str.add(i);}
+        for (int i = 0; i <= 10; i++) {
+            str.add(i);
+        }
         List<Integer> evenNumbers = str.stream()
                 .filter(num -> num % 2 == 0)
                 .sorted()
                 .collect(Collectors.toList());
 
         evenNumbers.forEach(System.out::println);
-    }@Test
-    public void sec(){
+    }
+
+    @Test
+    public void sec() {
         Test1 test1 = new Test1();
         System.out.println(test1.result);
-        System.out.println(test1.summ(5,5));
+        System.out.println(test1.summ(5, 5));
 
 
     }
-    }
+}
 

@@ -1,7 +1,6 @@
 package maksim.webtesting.rozetka.pages;
 
 import driver.DriverPoll;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
@@ -30,7 +29,7 @@ public class Mainpage extends BasePage {
     @FindBy(xpath = "//*[@id='fat-menu']")
     private WebElement mbutton;
 
-    public Mainpage clicbtn() {
+    public Mainpage clicCategorii() {
         click(mbutton);
         return new Mainpage();
 
@@ -154,7 +153,24 @@ public class Mainpage extends BasePage {
             }
         }
         return this;
-    }     }
+    }
+    @FindBy(xpath = "//li[@class='menu__hidden-list-item ng-star-inserted']//*[.=' Ноутбуки ']")
+    private WebElement notebook;
+
+    public Mainpage clcNotebook(){
+        click(notebook);
+        return this;
+    }
+    @FindBy(xpath = "//input[@class='sidebar-search__input ng-untouched ng-pristine ng-valid']")
+    private WebElement screach;
+    String HP = "HP";
+    public Mainpage clcscreach(){
+        click(screach);
+        screach.sendKeys(HP);
+        return this;
+    }
+
+    }
 
 
 
