@@ -13,6 +13,7 @@ public class DataPro {
         };
 
     }
+
     @DataProvider(name = "test")
     public Object[][] test() {
         return new Object[][]{
