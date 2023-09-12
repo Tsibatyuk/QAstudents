@@ -9,10 +9,8 @@ import org.testng.annotations.Test;
 import tests.BaseTest;
 
 public class Hotline extends BaseTest {
-<<<<<<< HEAD
-=======
 
->>>>>>> 0679cda6704fcb9992b2eff7ee96c139aba67fcd
+
 @Test
     public void testHotline (){
 
