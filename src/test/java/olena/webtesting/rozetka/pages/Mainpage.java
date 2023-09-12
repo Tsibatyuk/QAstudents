@@ -276,6 +276,7 @@ public class Mainpage extends BasePage {
 
     @FindBy(xpath = "//a[@ class='tile-cats__heading ng-star-inserted']")
     private List<WebElement> catalogGarden;
+
     public Mainpage rozetkaGarden() {
         click(openGarden.get(6));
         sleep(3);
