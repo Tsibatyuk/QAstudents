@@ -44,66 +44,68 @@ public class Mainpage extends BasePage {
     @FindBy(xpath = "//div[contains(@class,'animated')]//*[.='Ноутбуки та комп’ютери']")
     private WebElement laptops;
 
-public Mainpage laptopcomp(){
-    click(laptops);
-    sleep(2);
-    scroll(500);
-    return this;
-}
+    public Mainpage laptopcomp() {
+        click(laptops);
+        sleep(2);
+        scroll(500);
+        return this;
+    }
 
 
-@FindBy(xpath = "//img[contains(@alt,'Ноутбуки')]")
+    @FindBy(xpath = "//img[contains(@alt,'Ноутбуки')]")
     private WebElement comp;
 
-public Mainpage computer(){
-    click(comp);
-    sleep(2);
-    return this;
-}
+    public Mainpage computer() {
+        click(comp);
+        sleep(2);
+        return this;
+    }
 
-@FindBy(xpath = "//input[1]")
-private List<WebElement> search;
+    @FindBy(xpath = "//input[1]")
+    private List<WebElement> search;
 
-public Mainpage sort(){
-    sleep(2);
-    search.get(1).click();
-    sleep(2);
-    search.get(1).sendKeys("Asus");
-    sleep(5);
+    public Mainpage sort() {
+        sleep(2);
+        search.get(1).click();
+        sleep(2);
+        search.get(1).sendKeys("Asus");
+        sleep(5);
 //    click(search.get(0));
 //    setValue(search.get(0), "Asus");
 //    sleep(2);
 //    setValue(search.get(0), Keys.ESCAPE.toString());
 //    sleep(2);
-    return this;
-}
+        return this;
+    }
 
 
-
-@FindBy(xpath = "//div[@data-goods-id='391643262'][@class='goods-tile__inner']")
+    @FindBy(xpath = "//div[@data-goods-id='391643262'][@class='goods-tile__inner']")
     private WebElement lap;
 
-public Mainpage thislap(){
-    click(lap);
-    sleep(2);
-    return this;
-}
+    public Mainpage thislap() {
+        click(lap);
+        sleep(2);
+        return this;
+    }
 
-@FindBy(xpath = "//p[@class='product-price__big product-price__big-color-red']")
+    @FindBy(xpath = "//p[@class='product-price__big product-price__big-color-red']")
     private WebElement price;
 
-public Mainpage thisprice(){
-    click(price);
-    sleep(2);
-    String Textprice = price.getText();
+    public Mainpage thisprice() {
+        click(price);
+        sleep(2);
+        String Textprice = price.getText();
 
 
-String cleanedTextprice = Textprice.replaceAll("[^0-9.]", "");
-double newprice  = Double.parseDouble(cleanedTextprice);
-    System.out.println("Ціна товару : " +newprice);
-    return this;
+        String cleanedTextprice = Textprice.replaceAll("[^0-9.]", "");
+        double newprice = Double.parseDouble(cleanedTextprice);
+        System.out.println("Ціна товару : " + newprice);
+        return this;
+    }
 
 }
+
+
 //    @FindBy(xpath = "//li[contains(@class,'menu-categories__item ng-star-inserted')]")
 //    List<WebElement> allmenu;
 
@@ -131,15 +133,8 @@ double newprice  = Double.parseDouble(cleanedTextprice);
 //        }
 //
 
-    public static class Test3 extends BaseTest{
 
 
-
-
-
-    }
-
-    }
 
 
 
