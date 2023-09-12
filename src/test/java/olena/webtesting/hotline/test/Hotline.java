@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import tests.BaseTest;
 
-public class Hotlin extends BaseTest {
+public class Hotline extends BaseTest {
 @Test
     public void testHotline (){
         Mainpage2 te = new Mainpage2();
