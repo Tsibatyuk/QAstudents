@@ -108,8 +108,8 @@ public class Rozetka extends BaseTest {
     }
 
     @Test
-    public void garden(){
-        Mainpage ga =new Mainpage();
+    public void garden() {
+        Mainpage ga = new Mainpage();
         ga.openUrl("https://rozetka.com.ua/")
                 .cliktomenubutton()
                 .rozetkaGarden();
