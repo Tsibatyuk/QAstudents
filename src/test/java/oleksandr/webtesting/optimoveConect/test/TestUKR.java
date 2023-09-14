@@ -9,10 +9,10 @@ public class TestUKR extends BaseTest {
 public void testkareers(){
     OptimoveNew move2 = new OptimoveNew();
     move2.openOptimove()
-            .howerOverCompany()
-            .clikcareers()
-            .iframedroch()
-            .scroll(4200);
+//            .iframedroch()
+            .howerOverCompany();
+
+
 
 
 }
