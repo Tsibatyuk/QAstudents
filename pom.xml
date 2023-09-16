@@ -17,6 +17,7 @@
         <lombok2.version>1.18.28</lombok2.version>
         <selenium.version>3.141.59</selenium.version>
         <webdrivermanager.version>5.5.3</webdrivermanager.version>
+        <slf4j-log4j12.version>2.0.9</slf4j-log4j12.version>
         <log4j-core.version>2.20.0</log4j-core.version>
     </properties>
 
@@ -52,9 +53,18 @@
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-core</artifactId>
-        <version>2.20.0</version>
+        <version>${log4j-core.version}</version>
     </dependency>
-    <dependency>
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4j-log4j12.version}</version>
+            <type>pom</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
         <version>${lombok2.version}</version>
