@@ -42,6 +42,7 @@ public class Rozetka extends BaseTest {
         lst.openrozetka()
                 .webElement();
     }
+
     @Test
     public void screachHP(){
         Mainpage hp = new Mainpage();
