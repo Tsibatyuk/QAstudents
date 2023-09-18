@@ -35,5 +35,14 @@ public class Hotline extends BaseTest {
         System.out.println("Категорія" + categoryName);
         System.out.println("Заголовок" + pageTitle);
     }
+    @Test(dataProvider = "data",dataProviderClass = MainpageHot.class)
+    public void hotdata(){
+        MainpageHot ee =new MainpageHot();
+        ee.hotlineUACatalog()
+                .listArray();
+
+
+
+    }
 
 }

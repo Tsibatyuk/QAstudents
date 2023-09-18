@@ -11,6 +11,8 @@ public class DataPro {
                 {"https://hotline.ua/","ExpectedResult3"}
         };
     }
+
+
     @DataProvider(name = "testData")
     public Object[][] testData(){
         return new Object[][]{
