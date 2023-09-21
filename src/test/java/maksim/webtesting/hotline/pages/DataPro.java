@@ -11,6 +11,8 @@ public class DataPro {
                 {"https://hotline.ua/","ExpectedResult3"}
         };
     }
+
+
     @DataProvider(name = "testData")
     public Object[][] testData(){
         return new Object[][]{
@@ -30,7 +32,7 @@ public class DataPro {
                         {"Сантехніка, Будматеріали"},
                         {"Смартфони, Телефони"},
                         {"Спорт, Активний відпочинок"},
-                        {"ТБ, Аудіо, Відео, Фото"},
+                        {"ТВ, Аудіо, Відео, Фото"},
                         {"Товари для дорослих"},
                         {"Товари для геймерів"},
                         { "Туризм, Риболовля"},

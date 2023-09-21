@@ -5,6 +5,7 @@ import maksim.webtesting.hotline.pages.DataPro;
 import maksim.webtesting.hotline.pages.MainpageHot;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import tests.BaseTest;
 
@@ -35,5 +36,26 @@ public class Hotline extends BaseTest {
         System.out.println("Категорія" + categoryName);
         System.out.println("Заголовок" + pageTitle);
     }
+    @Test(dataProvider = "data",dataProviderClass = MainpageHot.class)
+    public void hotdata(){
+        MainpageHot ee =new MainpageHot();
+        ee.hotlineUACatalog()
+                .listArray();
+
+    }
+    public boolean asser() {
+        String expected = "Welcome back,";
+        // Assert.assertEquals(DriverPoll.getDriver().getTitle(), expected);
+    if (expected==DriverPoll.getDriver().getTitle())
+    return true;
+    else{
+        return false;}
+    }
+
+    public void aser(){
+        Assert.assertTrue(asser(),"Ти Вася");
+    }
+
+
 
 }

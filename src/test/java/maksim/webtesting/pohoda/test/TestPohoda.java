@@ -12,4 +12,6 @@ public class TestPohoda extends BaseTest {
                 .checkTemperature();
 
     }
-}
+
+    }
+
