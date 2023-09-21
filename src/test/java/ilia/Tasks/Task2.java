@@ -2,7 +2,6 @@ package ilia.Tasks;
 
 import driver.DriverPoll;
 import org.apache.logging.log4j.core.appender.rolling.action.IfAccumulatedFileCount;
-import org.openqa.selenium.devtools.v114.tethering.model.Accepted;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;

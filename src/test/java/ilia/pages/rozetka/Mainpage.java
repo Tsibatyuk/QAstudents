@@ -73,7 +73,8 @@ public class Mainpage extends BasePage {
         String realisation = laptop.getText().replaceAll("[^0-9]","");
 
             int ka = Integer.parseInt(realisation);
-            System.out.println(ka);
+            String priceWithSymbol = ka + "₴";
+            System.out.println(priceWithSymbol);
 
 
         return this;
