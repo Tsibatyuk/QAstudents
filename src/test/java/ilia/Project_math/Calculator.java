@@ -1,7 +1,4 @@
-package ilia.Project;
-
-import org.bouncycastle.jcajce.provider.symmetric.Skipjack;
-import org.testng.SkipException;
+package ilia.Project_math;
 
 import java.util.Random;
 import java.util.Scanner;
