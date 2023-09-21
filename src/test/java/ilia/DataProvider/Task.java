@@ -1,2 +1,5 @@
-package ilia.DataProvider;public class Task {
+package ilia.DataProvider;
+
+public class Task {
+    
 }
