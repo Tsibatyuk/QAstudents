@@ -1,6 +1,7 @@
 package oleksandr.webtesting.rozetka.test;
 
 import oleksandr.webtesting.rozetka.pages.Mainpagerozetka;
+import oleksandr.webtesting.rozetka.pages.Rouz;
 import org.testng.annotations.Test;
 import tests.BaseTest;
 import org.openqa.selenium.JavascriptExecutor;
@@ -46,6 +47,15 @@ sleep(2);
                         .exitNotbook()
                                 .exitNotbook1();
 
+}
+@Test
+    public class Rozeexit extends BaseTest{
+        public void openrozetka1(){
+            Rouz we32 = new Rouz();
+            we32.openrezka()
+                    .clikfilms();
+
+        }
 }
 }
 
