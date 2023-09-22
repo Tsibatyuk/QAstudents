@@ -10,11 +10,12 @@ public class Rozetka extends BaseTest {
     @Test
     public void rozetkaTest(){
         Mainpage mp = new Mainpage();
-        mp.openRozetka();
-        System.out.println( DriverPoll.getDriver().getTitle());
-//          .assertUrl()
-//          .checkTheLanguge();
-//        sleep(4);
+
+        mp.openRozetka()
+                .assertUrl()
+                .checkTheLanguge()
+                .getTextFromList();
+        sleep(4);
 
     }
 

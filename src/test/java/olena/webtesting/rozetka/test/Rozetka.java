@@ -18,8 +18,9 @@ public class Rozetka extends BaseTest {
 //        System.out.println("Ви обрали українську мову ");
 
     }
+
     @Test
-    public void newGoogle(){
+    public void newGoogle() {
         DriverPoll.getDriver().get("https://www.google.com");
     }
 
@@ -27,7 +28,6 @@ public class Rozetka extends BaseTest {
     public void sport() {
         Mainpage sp = new Mainpage();
         sp.openUrl("https://rozetka.com.ua/")
-                .assertUrl()
                 .cliktomenubutton()
                 .cliksport();
         sleep(4);
@@ -37,7 +37,6 @@ public class Rozetka extends BaseTest {
     public void computer() {
         Mainpage co = new Mainpage();
         co.openUrl("https://rozetka.com.ua/")
-                .assertUrl()
                 .cliktomenubutton()
                 .clikcomputer();
         sleep(8);
@@ -49,48 +48,70 @@ public class Rozetka extends BaseTest {
         Mainpage cy = new Mainpage();
 
         cy.openUrl("https://rozetka.com.ua/")
-                .assertUrl()
                 .cliktomenubutton()
                 .forCycle();
         sleep(5);
     }
 
     @Test
-    public void menu(){
+    public void menu() {
         Mainpage me = new Mainpage();
 
         me.openUrl("https://rozetka.com.ua/")
-                .assertUrl()
                 .clikMenu();
 
     }
+
     @Test
-    public void laptop(){
+    public void laptop() {
         Mainpage la = new Mainpage();
         la.openUrl("https://rozetka.com.ua/")
-                .assertUrl()
                 .cliktomenubutton()
                 .clikcomputer()
                 .laptop();
 
+
     }
+
     @Test
-    public void login(){
-        Mainpage lo =new Mainpage();
+    public void login() {
+        Mainpage lo = new Mainpage();
         lo.openUrl("https://rozetka.com.ua/")
-                .assertUrl()
                 .clikLoginRozetka();
     }
+
     @Test
-    public void login1(){
-        Mainpage lo1 =new Mainpage();
+    public void login1() {
+        Mainpage lo1 = new Mainpage();
         lo1.openUrl("https://rozetka.com.ua/")
-                .assertUrl()
                 .desolateField()
                 .enterButtonLogin();
-                //.notRobotLogin();
-
+        //.notRobotLogin();
 
     }
 
+    @Test
+    public void listSet() {
+        Mainpage liS = new Mainpage();
+        liS.openUrl("https://rozetka.com.ua/")
+                .webElement();
+    }
+
+    @Test
+    public void filtr() {
+        Mainpage la = new Mainpage();
+        la.openUrl("https://rozetka.com.ua/")
+                .cliktomenubutton()
+                .clikcomputer()
+                .filterLoptop1();
+
+    }
+
+    @Test
+    public void garden() {
+        Mainpage ga = new Mainpage();
+        ga.openUrl("https://rozetka.com.ua/")
+                .cliktomenubutton()
+                .rozetkaGarden();
+    }
 }

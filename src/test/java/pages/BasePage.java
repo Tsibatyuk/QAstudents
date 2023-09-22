@@ -21,7 +21,7 @@ abstract public class BasePage {
     private int BASE_WAIT = 5;
 
     public BasePage() {
-        wait = new WebDriverWait(DriverPoll.getDriver(), Duration.ofSeconds(5));
+        wait = new WebDriverWait(DriverPoll.getDriver(), 5);
         PageFactory.initElements(DriverPoll.getDriver(), this);
     }
 
@@ -89,6 +89,7 @@ abstract public class BasePage {
     protected void setValue(WebElement element, String value) {
         wait.until(ExpectedConditions.elementToBeClickable(element)).sendKeys(value);
     }
+
     public void goBack() {
         DriverPoll.getDriver().navigate().back();
     }
@@ -104,5 +105,6 @@ abstract public class BasePage {
         System.out.println("Pole pyste shluha");
         return usernameValue.isEmpty();
     }
+
 
 }

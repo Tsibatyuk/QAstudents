@@ -10,8 +10,7 @@ public class Rozetka extends BaseTest {
         Mainpage ukr = new Mainpage();
         ukr.openrozetka()
                 .assertUrl()
-                .ClickToMenubutton()
-                .getTextfromList();
+                .ClickToMenubutton();
         sleep(4);
         System.out.println("мова на сайті - українська");
 
@@ -33,9 +32,14 @@ public class Rozetka extends BaseTest {
         mp.openrozetka()
                 .assertUrl()
                 .ClickToMenubutton()
-                .clickcomp()
-                .laptopp();
+                .laptopcomp()
+                .computer()
+                .sort();
+    }
 
-
+    @Test
+    public void Newmethod(){
+        Mainpage mmp =new Mainpage();
+        mmp.openrozetka();
     }
 }

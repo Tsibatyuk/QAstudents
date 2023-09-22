@@ -1,15 +1,17 @@
 package oleksandr.webtesting.rozetka.test;
 
-import driver.Browser;
-import oleksandr.webtesting.rozetka.pages.Mainpj;
+import oleksandr.webtesting.rozetka.pages.Mainpagerozetka;
+import oleksandr.webtesting.rozetka.pages.Rouz;
 import org.testng.annotations.Test;
 import tests.BaseTest;
+import org.openqa.selenium.JavascriptExecutor;
+import java.util.Set;
 
 public class Rozetka extends BaseTest {
 
     @Test
 public void Ukrtest(){
-    Mainpj ok =new Mainpj();
+    Mainpagerozetka ok =new Mainpagerozetka();
     ok.openrozetka()
             .assertUrl()
             .klaztomenuBaton()
@@ -19,7 +21,7 @@ public void Ukrtest(){
     }
 @Test
     public void Sad(){
-    Mainpj gorod = new Mainpj();
+    Mainpagerozetka gorod = new Mainpagerozetka();
     gorod.openrozetka()
 //            .checkTheLanguge()
             .klaztomenuBaton()
@@ -27,7 +29,34 @@ public void Ukrtest(){
 sleep(2);
 
     }
+    @Test
+    public  void Testlogin(){
+     Mainpagerozetka mr = new Mainpagerozetka();
+     mr.openrozetka()
+             .selectlatters();
 
+     sleep(4);
+
+    }
+
+@Test
+    public  void  Newdevaice(){
+        Mainpagerozetka nout = new Mainpagerozetka();
+        nout.openrozetka()
+                .klaztomenuBaton()
+                        .exitNotbook()
+                                .exitNotbook1();
+
+}
+@Test
+    public class Rozeexit extends BaseTest{
+        public void openrozetka1(){
+            Rouz we32 = new Rouz();
+            we32.openrezka()
+                    .clikfilms();
+
+        }
+}
 }
 
 

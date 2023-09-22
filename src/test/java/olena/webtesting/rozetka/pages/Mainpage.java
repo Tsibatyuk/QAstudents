@@ -1,19 +1,20 @@
 package olena.webtesting.rozetka.pages;
 
 import driver.DriverPoll;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 import pages.BasePage;
 
-import javax.swing.*;
-import java.security.cert.Extension;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Mainpage extends BasePage {
+
     public Mainpage openUrl(String siteUrl) {
         DriverPoll.getDriver().get(siteUrl);
         return this;
@@ -124,12 +125,58 @@ public class Mainpage extends BasePage {
         return this;
     }
 
+    @FindBy(xpath = "//div[@data-goods-id='391643262'][@class='goods-tile__inner']")
+    private WebElement thisLaptop;
+
+    @FindBy(xpath = "//p[@class='product-price__big product-price__big-color-red']")
+    private WebElement price;
     @FindBy(xpath = "//img[contains(@alt,'Ноутбуки')]")
     private WebElement clikLaptop;
+
+    @FindBy(xpath = "//a[@data-id='Apple']")
+    private WebElement filter;
+
+
+    public Mainpage laptopApple() {
+        click(clikLaptop);
+        sleep(2);
+        filter.click();
+        sleep(10);
+        return this;
+    }
+
+    @FindBy(xpath = "//a[@class='checkbox-filter__link']")
+    private List<WebElement> filterLoptop;
+
+    public Mainpage filterLoptop1() {
+        click(clikLaptop);
+        System.out.println(filterLoptop.get(1).getText());
+        List<String> filtr = filterLoptop.stream()
+                .map(WebElement::getText) // Use getText() method to extract text
+                .collect(Collectors.toList());
+        filtr.forEach(System.out::println);
+
+        return this;
+    }
 
     public Mainpage laptop() {
         click(clikLaptop);
         sleep(5);
+        scroll(800);
+        sleep(2);
+        click(thisLaptop);
+        sleep(2);
+        String priceText = price.getText();
+
+        // Видаляємо з тексту всі символи, окрім цифр та крапки (якщо вона є).
+        String cleanedPriceText = priceText.replaceAll("[^0-9.]", "");
+
+        // Перетворюємо текст у числовий формат.
+        double numericPrice = Double.parseDouble(cleanedPriceText);
+
+        // Виводимо цю ціну в термінал.
+        System.out.println("Ціна товару: " + numericPrice);
+
         return this;
     }
 
@@ -142,10 +189,10 @@ public class Mainpage extends BasePage {
     @FindBy(xpath = "//input[@class='ng-untouched ng-pristine ng-invalid']")
     private WebElement passwordField;
 
-    @FindBy(xpath ="//button[@class='button button--large button--green auth-modal__submit ng-star-inserted']" )
+    @FindBy(xpath = "//button[@class='button button--large button--green auth-modal__submit ng-star-inserted']")
     private WebElement enterButton;
 
-    public Mainpage enterButtonLogin(){
+    public Mainpage enterButtonLogin() {
         click(enterButton);
         sleep(6);
         return this;
@@ -154,7 +201,7 @@ public class Mainpage extends BasePage {
     @FindBy(xpath = "//div[@class='recaptcha-checkbox-borderAnimation']")
     private WebElement notRobot;
 
-    public Mainpage notRobotLogin(){
+    public Mainpage notRobotLogin() {
         click(notRobot);
         sleep(5);
         return this;
@@ -171,7 +218,8 @@ public class Mainpage extends BasePage {
         checkThatFieldIsEmpty(passwordField);
         return this;
     }
-    public Mainpage desolateField(){
+
+    public Mainpage desolateField() {
         click(clikLogin);
         sleep(1);
         usernameField.sendKeys("+380939816044");
@@ -181,6 +229,63 @@ public class Mainpage extends BasePage {
 
         sleep(3);
 
+
+        return this;
+    }
+
+    public Mainpage webElement() {
+        List<String> listSectoins = listmenucategories.stream()
+                .map(WebElement::getText)
+                .collect(Collectors.toList());
+
+        for (String str : listSectoins) {
+            List<Character> characters = str.chars()
+                    .mapToObj(c -> (char) c)
+                    .collect(Collectors.toList());
+            characters.addAll(characters);
+
+            Set<Character> uniqueSet = new HashSet<>(characters);
+
+            for (Character character : uniqueSet) {
+                System.out.println(character);
+            }
+        }
+        return this;
+    }
+
+    public Mainpage qqq() {
+        List<String> ysrisy = listmenucategories.stream()
+                .map(WebElement::getText)
+                .collect(Collectors.toList());
+        for (String qwe : ysrisy) {
+            List<Character> characters = qwe.chars()
+                    .mapToObj(c -> (char) c)
+                    .collect(Collectors.toList());
+            characters.addAll(characters);
+            Set<Character> www = new HashSet<>(characters);
+            for (Character character : www) {
+                System.out.println(character);
+            }
+        }
+
+        return this;
+    }
+
+    @FindBy(xpath = "//a[@ class='menu-categories__link js-menu-categories__link']")
+    private List<WebElement> openGarden;
+
+    @FindBy(xpath = "//a[@ class='tile-cats__heading ng-star-inserted']")
+    private List<WebElement> catalogGarden;
+
+    public Mainpage rozetkaGarden() {
+        click(openGarden.get(6));
+        sleep(3);
+        scroll(800);
+        System.out.println(catalogGarden.get(1).getText());
+        List<String> garden = catalogGarden.stream()
+                .map(WebElement::getText)
+                .collect(Collectors.toList());
+        garden.forEach(System.out::println);
 
         return this;
     }

@@ -10,7 +10,7 @@ public class Rozetka extends BaseTest {
         Mainpage mp = new Mainpage();
         mp.openrozetka()
                 .asserturl()
-                .clicbtn()
+                .clicCategorii()
                 .listrrr();
         sleep(3);
     }
@@ -20,7 +20,7 @@ public class Rozetka extends BaseTest {
         Mainpage forest = new Mainpage();
         forest.openrozetka()
                 .checkTheLanguge()
-                .clicbtn()
+                .clicCategorii()
                 .clksport();
         sleep(4);
 
@@ -36,5 +36,21 @@ public class Rozetka extends BaseTest {
                 .notbot();
         sleep(4);
     }
+    @Test
+    public void listWebElements(){
+        Mainpage lst = new Mainpage();
+        lst.openrozetka()
+                .webElement();
+    }
 
+    @Test
+    public void screachHP(){
+        Mainpage hp = new Mainpage();
+        hp.openrozetka()
+                .clicCategorii()
+                .clcNotebook()
+                .clcscreach();
+
+        sleep(5);
+    }
 }
