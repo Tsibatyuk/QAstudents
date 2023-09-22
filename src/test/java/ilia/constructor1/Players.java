@@ -13,6 +13,12 @@ public class Players {
             this.rank = rank;
         }
 
+        @Override
+        public String toString()
+        {
+            return " Id = " + id + " Name = " + name + " Rank = " + rank ;
+        }
+
 
         public int getId() {
             return id;
