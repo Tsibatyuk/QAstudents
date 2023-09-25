@@ -1,7 +1,9 @@
 package zhenia.webtesting.rozetka.test;
 
+
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import driver.DriverPoll;
 import org.testng.annotations.Test;
 import tests.BaseTest;
 import zhenia.webtesting.rozetka.pages.Mainpage;
@@ -19,7 +21,9 @@ public class Rozetka extends BaseTest {
     public void rozetkaTest(){
 
         Mainpage mp = new Mainpage();
+
         Rozetka rz = new Rozetka();
+
         mp.openRozetka()
                 .assertUrl()
                 .checkTheLanguge()
@@ -28,5 +32,13 @@ public class Rozetka extends BaseTest {
 
         sleep(4);
 
+    }
+
+
+    @Test
+    public static String solution(String str){
+        String str2 = null;
+
+        return str2;
     }
 }

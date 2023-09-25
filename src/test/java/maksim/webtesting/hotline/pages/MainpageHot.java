@@ -2,10 +2,15 @@ package maksim.webtesting.hotline.pages;
 
 import driver.DriverPoll;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 import pages.BasePage;
 
+import javax.swing.*;
+import java.awt.*;
 import java.util.List;
 
 public class MainpageHot extends BasePage {
@@ -85,18 +90,38 @@ public class MainpageHot extends BasePage {
 
     @DataProvider(name = "data")
     public Object[][] data() {
-        return listArray();}
+        return listArray();
+    }
 
-        public String[][] listArray () {
-            String[][] element = new String[listCatecorii.size()][1];
-            for (int i = 0; i < listCatecorii.size(); i++) {
-                WebElement text = listCatecorii.get(i);
-                element[i][0] = text.getText();
-            }
-            return element;
-
-
+    public String[][] listArray() {
+        String[][] element = new String[listCatecorii.size()][1];
+        for (int i = 0; i < listCatecorii.size(); i++) {
+            WebElement text = listCatecorii.get(i);
+            element[i][0] = text.getText();
         }
+        return element;
+    }
 
-};
+    @FindBy(xpath = "//span[@class='text'][text()='Зоотовари']")
+    private WebElement zootovary;
+
+    public MainpageHot assertColor() {
+        openHotline();
+        sleep(2);
+        String expectedResalt = zootovary.getCssValue("color");
+        Actions actions = new Actions(DriverPoll.getDriver());
+        actions.moveToElement(zootovary).perform();
+        String actualResalt = zootovary.getCssValue("color");
+
+        if (expectedResalt.equals(actualResalt)) {
+            System.out.println("Очікуване значення кольору: " + expectedResalt);
+            System.out.println("Фактичне значення кольору: " + actualResalt);
+        }
+        Assert.assertNotEquals(actualResalt, expectedResalt, "Pidaras");
+        System.out.println("Pidarasina");
+        return this;
+    }
+}
+
+
 
