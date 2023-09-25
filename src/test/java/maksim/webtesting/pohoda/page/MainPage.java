@@ -31,4 +31,6 @@ public class MainPage extends BasePage {
             System.out.println("погода так собі");}
             return this;
         }
+
+
     }
