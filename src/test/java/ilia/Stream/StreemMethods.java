@@ -42,7 +42,8 @@ public class StreemMethods {
         words.add("Computer");
 
         //метод map виводить кількість елментів в елементі(букв в слові)
-        List<Integer> words2 = words.stream().map(element -> element.length())
+        List<Integer> words2 = words.stream()
+                .map(element -> element.length())
                         .collect(Collectors.toList());
         System.out.println("Map: " + words2);
 

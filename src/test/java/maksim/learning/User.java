@@ -16,8 +16,8 @@ public class User {
       //  String cool = String.format("%s пісяє на%s.%d Разів,",telka,loshara,age);
         System.out.printf("%s pi on %s a %s pi on %s ha ha ha  ",loshara,telka,telka,loshara);
         System.out.printf(" а %s нюхає Бебру у %s і %s молодець",drocher,god,name);
-       // String hot = String.valueOf( age);
-      //  System.out.println(age);
+        //String hot = String.valueOf( age);
+        //System.out.println(age);
 
     }
 }
