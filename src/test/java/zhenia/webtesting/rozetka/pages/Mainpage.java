@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import pages.BasePage;
 import utiles.Config;
+import zhenia.webtesting.rozetka.test.Rozetka;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,7 +41,7 @@ private WebElement fatMenuBtn;
     @FindBy(xpath ="//li[contains(@class,'menu-categories__item ng-star-inserted')]")
     List<WebElement> listOfProducts;
 
-    public Mainpage getTextFromList() {
+    public Rozetka getTextFromList() {
         List<String> newlist = new ArrayList<>();
         newlist.forEach(lis->{
 //            newlist.add(listOfProducts.get(Integer.parseInt(i)).getText());
@@ -50,7 +51,7 @@ private WebElement fatMenuBtn;
 //            newlist.add(listOfProducts.get(i).getText());
 //            System.out.println(newlist.get(i));
 //        }
-        return this;
+        return new Rozetka();
     }
 //        List<String> uniqueProductNames = listOfProducts.stream()
 //                .map(WebElement::getText)
