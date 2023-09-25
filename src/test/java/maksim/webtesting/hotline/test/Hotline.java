@@ -55,7 +55,15 @@ public class Hotline extends BaseTest {
     public void aser(){
         Assert.assertTrue(asser(),"Ти Вася");
     }
+@Test
+public void assertColorTest(){
+      MainpageHot color = new MainpageHot();
+
+            color.assertColor();
 
 
+
+
+}
 
 }
