@@ -5,14 +5,15 @@ import olena.webtesting.hotline.pages2.DataPro;
 import olena.webtesting.hotline.pages2.Mainpage2;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import tests.BaseTest;
 
 public class Hotline extends BaseTest {
 
 
-@Test
-    public void testHotline (){
+    @Test
+    public void testHotline() {
 
         Mainpage2 te = new Mainpage2();
         te.openHotline()
@@ -33,7 +34,7 @@ public class Hotline extends BaseTest {
     @Test(dataProvider = "test", dataProviderClass = DataPro.class)
     public void dataTestHotline(String categoryname) {
         DriverPoll.getDriver().get("https://hotline.ua/");
-        WebElement categoryLink = DriverPoll.getDriver().findElement(new By.ByLinkText(categoryname));
+        WebElement categoryLink = DriverPoll.getDriver().findElement(By.linkText(categoryname));
         categoryLink.click();
 
         String pageTitle = DriverPoll.getDriver().getTitle();
@@ -43,4 +44,30 @@ public class Hotline extends BaseTest {
 
 
     }
+
+    @Test
+    public void zxcv() {
+        String name = "Оленка";
+        int age = 33;
+        String formattedString = String.format("Привіт, мене звати %s і мені %d роки", name, age);
+        System.out.println(formattedString);
+    }
+
+    @Test
+    public void zxcvb() {
+        String text = "Це приклад рядка";
+        String substring1 = text.substring(2); // Поверне "приклад рядка"
+        String substring2 = text.substring(4, 11);
+
+    }
+
+    @Test
+    public void assertHotline() {
+        Mainpage2 ass = new Mainpage2();
+        ass
+                .openHotline()
+                .assertHot();
+
+    }
+
 }
