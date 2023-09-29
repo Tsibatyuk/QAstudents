@@ -1,6 +1,7 @@
 package olena.webtesting.hotline.pages2;
 
 import org.testng.annotations.DataProvider;
+import pages.BasePage;
 
 public class DataPro {
     @DataProvider(name = "testData")
@@ -32,7 +33,7 @@ public class DataPro {
                 {"Сантехніка, Будматеріали"},
                 {"Смартфони, Телефони"},
                 {"Спорт, Активний відпочинок"},
-                {"ТБ, Аудіо, Відео, Фото"},
+                {"ТВ, Аудіо, Відео, Фото"},
                 {"Товари для дорослих"},
                 {"Товари для геймерів"},
                 {"Туризм, Риболовля"},
