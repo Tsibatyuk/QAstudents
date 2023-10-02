@@ -118,10 +118,11 @@ public class MainpageHot extends BasePage {
             System.out.println("Фактичне значення кольору: " + actualResalt);
         }
         Assert.assertNotEquals(actualResalt, expectedResalt, "Pidaras");
-        System.out.println("Pidarasina");
         return this;
     }
+
 }
+
 
 
 
