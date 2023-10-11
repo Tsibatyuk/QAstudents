@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import pages.BasePage;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -91,6 +92,24 @@ public class Page extends BasePage {
                 .boxed()
                 .collect(Collectors.toList());
         size.forEach(count -> System.out.println("Кількість символів: " + count));
+        return this;
+    }
+
+    @FindBy(xpath = "//a[@class='h-m__item-link'][text()='Фільми']")
+    private WebElement filmsButton;
+
+    public Page clkFilmsButton() {
+        click(filmsButton);
+        return this;
+    }
+
+    @FindBy(xpath = "//div[@class='movie-block']")
+    private List<WebElement> films;
+
+    public Page listfilms() {
+
+        List<String> filmSorted = films.stream().map(WebElement::getText).sorted().collect(Collectors.toList());
+        filmSorted.forEach(System.out::println);
         return this;
     }
 }

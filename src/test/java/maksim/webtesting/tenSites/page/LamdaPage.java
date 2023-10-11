@@ -9,6 +9,7 @@ import javax.swing.text.DateFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class LamdaPage extends BasePage {
 
@@ -50,18 +51,21 @@ public class LamdaPage extends BasePage {
         sleep(5);
         return this;
     }
+
     @FindBy(xpath = "//a[@class='h-m__item-link'][text()='Розклад']")
     private WebElement rozklad;
 
-    public LamdaPage clicRozklad(){
+    public LamdaPage clicRozklad() {
         click(rozklad);
         return this;
     }
+
     @FindBy(xpath = "//a[@class='movie-name link-text mb-15'][text()='Мавка. Лісова пісня (0+)']")
     private WebElement mavka;
     @FindBy(xpath = "//div[@class='mat-radio-label-content'][text()=' завтра ']")
     private WebElement tomorow;
-    public LamdaPage clicMavka(){
+
+    public LamdaPage clicMavka() {
         click(mavka);
         sleep(4);
         scroll(200);
@@ -69,15 +73,17 @@ public class LamdaPage extends BasePage {
         click(tomorow);
         return this;
     }
+
     @FindBy(xpath = "//button[@class='chips']")
     private WebElement ticket;
     @FindBy(xpath = "//div[@class='hall__seat']")
-    private List<WebElement>seat;
+    private List<WebElement> seat;
     @FindBy(xpath = "//div[@class='add-to-cart__content-left']")
-    private List<WebElement>atToCart;
+    private List<WebElement> atToCart;
     @FindBy(xpath = "//button[@class='add-to-cart mb-30 test2 ng-star-inserted']")
     private WebElement pay;
-    public LamdaPage clicTicket(){
+
+    public LamdaPage clicTicket() {
         click(ticket);
         sleep(7);
         click(seat.get(0));
@@ -85,7 +91,8 @@ public class LamdaPage extends BasePage {
         click(atToCart.get(0));
         click(pay);
         sleep(5);
-        LambdaInterface vv = () -> System.out.println("dsfgj");{
+        LambdaInterface vv = () -> System.out.println("dsfgj");
+        {
             System.out.println(vv);
         }
         return this;
@@ -93,7 +100,11 @@ public class LamdaPage extends BasePage {
 
 
 
-        }
+
+    }
+
+
+
 
 
 
