@@ -105,6 +105,7 @@ public class PlanetaKino extends BaseTest {
                 .listfilms();
         sleep(4);
     }
+    }
 
-}
+
 

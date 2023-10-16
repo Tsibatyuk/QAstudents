@@ -20,6 +20,6 @@ public class TestMap extends BaseTest {
                 .clicWhereWeGo()
                 .sendKeysWhereWeGo()
                 .clicFastRoute();
-        sleep(5);
+        sleep(4);
     }
 }
