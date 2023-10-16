@@ -55,7 +55,7 @@ class Cat extends Another {
         Calcul calc = new Calcul();                                         //но з різними параметрами в одному класі.
         calc.add(5, 5);
         calc.add(1, 2, 3);
-        calc.add(2.0, 3.0);
+        calc.add(2.0, 3.1);
 
     }
 
