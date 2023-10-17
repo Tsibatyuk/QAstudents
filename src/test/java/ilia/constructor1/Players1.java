@@ -1,5 +1,6 @@
 package ilia.constructor1;
 
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
