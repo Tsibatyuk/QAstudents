@@ -75,15 +75,16 @@ public class PlanetaKino extends BaseTest {
     }
 
     @Test
-    public void infoMax(){
+    public void infoMax() {
         StreamPage info = new StreamPage();
         info.openPlanetaKino()
                 .clicContacts()
                 .informMax();
 
     }
+
     @Test
-    public void loginRozetka(){
+    public void loginRozetka() {
         StreamPage open = new StreamPage();
         LamdaPage log = new LamdaPage();
         open.openPlanetaKino();
@@ -95,4 +96,16 @@ public class PlanetaKino extends BaseTest {
                 .clicMavka()
                 .clicTicket();
     }
-}
+
+    @Test
+    public void searchFilms() {
+        Page sort = new Page();
+        sort.openKino()
+                .clkFilmsButton()
+                .listfilms();
+        sleep(4);
+    }
+    }
+
+
+

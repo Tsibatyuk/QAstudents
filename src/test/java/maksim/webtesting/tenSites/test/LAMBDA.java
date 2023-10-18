@@ -46,14 +46,20 @@ public class LAMBDA {
     }
 
     public void min() {
-        List<String> minimum = new ArrayList<>();
-        minimum.add("123");
-        minimum.add("45668");
-        minimum.add("7896");
-        Optional<String> a = minimum.stream()
-                .max(Comparator.comparing(String::length));
-
-        Optional<String> b = minimum.stream().min(Comparator.comparing(String::length));
+        List<Integer> minimum = new ArrayList<>();
+        minimum.add(123);
+        minimum.add(45668);
+        minimum.add(7896);
+        Optional<Integer> a = minimum.stream()
+                .max(Comparator.comparing(Integer::byteValue));
+        Optional<Integer> b = minimum.stream().min(Comparator.comparing(Integer::byteValue));
         Assert.assertEquals(a, b);
     }
-}
+
+
+    }
+
+
+
+
+
