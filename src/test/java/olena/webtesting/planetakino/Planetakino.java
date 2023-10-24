@@ -39,12 +39,23 @@ public class Planetakino extends BaseTest {
         cli.openPlanetakino()
                 .clikFiltr();
     }
-@Test
+
+    @Test
     public void reduceKino() {
         MainpagePlanetakino ret = new MainpagePlanetakino();
         ret.openPlanetakino()
                 .reduce();
     }
+@Test
+    public void movieListGenreTest() {
 
+        MainpagePlanetakino url = new MainpagePlanetakino();
+        ClickMovieSection move = new ClickMovieSection();
+        SortingMoviesByTitle list = new SortingMoviesByTitle();
+        url.openPlanetakino();
+        move.clickMovieSection();
+        list.takingTheNamesOfTheFilmsIntoAList()
+                .genresInTheMovieSection();
+    }
 
 }

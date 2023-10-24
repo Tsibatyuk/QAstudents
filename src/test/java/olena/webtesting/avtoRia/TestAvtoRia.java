@@ -16,7 +16,13 @@ public class TestAvtoRia extends BaseTest {
                 .choose2017year()
                 .choosePriceFrom()
                 .choosePriceTo()
-                        .clickPossibleBargaining();
+                .clickPossibleBargaining()
+                .clikKyiv()
+                .clikParticipationInARoadAccident()
+                .clickWasNotInAnAccident()
+                .clickTechnicalCondition()
+                .clickCompletelyIntact()
+                .clickPaintCoating();
         sleep(5);
     }
 }
