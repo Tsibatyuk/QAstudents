@@ -15,6 +15,10 @@ public class testGymBeam extends BaseTest {
                 .openWheyProtein()
                 .outPutListOfProtein()
                 .outPutSortedListOfProtein()
-                .outputFilteredListOfProtein();
+                .outPutFilteredListOfProtein()
+                .outPutMaxElementOfProtein()
+                .outPutLimitlistofprotein()
+                .outPutRandomProtein()
+                .outPutMineElementOfProtein();
     }
 }
