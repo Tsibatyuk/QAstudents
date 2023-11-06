@@ -13,7 +13,7 @@ public class TestMap extends BaseTest {
                 .sendkeyMap()
                 .clicSearchGoodle()
                 .clicMaps()
-                .clicButtonRoute()
+                .clickButtonRoute()
                 .chooseCar()
                 .clicWhere()
                 .sendkeysWhere()

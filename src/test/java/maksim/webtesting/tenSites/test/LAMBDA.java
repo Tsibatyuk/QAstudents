@@ -10,19 +10,19 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-@Test
+@Test(groups = {"functest"})
 public class LAMBDA {
 
     public void vvm() {
         int sum = Stream.of(1, 2, 3).reduce(0, (acc, element) -> acc + element);
         Assert.assertEquals(6, sum);
     }
-
+@Test(groups = {"functest"})
     public void mvv() {
         int sum = Stream.of(50, 50, 10).reduce(0, (x, y) -> x + y);
         Assert.assertEquals(110, sum);
     }
-
+@Test(groups = {"functest"})
     public void move() {
         List<Integer> artist = new ArrayList<>();
         artist.add(234);
@@ -44,7 +44,7 @@ public class LAMBDA {
         System.out.println(together);
         Assert.assertEquals(artist, together);
     }
-
+@Test
     public void min() {
         List<Integer> minimum = new ArrayList<>();
         minimum.add(123);

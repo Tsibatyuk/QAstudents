@@ -1,18 +1,20 @@
 package maksim.webtesting.testGoogleMap.page;
 
-import org.openqa.selenium.Keys;
+import lombok.extern.log4j.Log4j;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
 
 import java.util.List;
 
+@Log4j
 public class GoogleMaps extends BasePage {
 
     @FindBy(xpath = "//button[@id='hArJGc']")
     private WebElement route;
 
-    public GoogleMaps clicButtonRoute() {
+    public GoogleMaps clickButtonRoute() {
+        log.info("click button route");
         click(route);
         return this;
     }
