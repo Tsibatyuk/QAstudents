@@ -12,6 +12,8 @@ public class Optimove extends BaseTest {
                 .hoverOverCompanyElement(3);
         sleep(3);
         te.clickCareers()
+
                 .clickButton();
+
     }
 }
